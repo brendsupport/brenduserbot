@@ -304,7 +304,7 @@ async def type_afk_is_not_true(notafk):
                 await notafk.client.send_message(
                     BOTLOG_CHATID,
                     "[" + name0 + "](tg://user?id=" + str(i) + ")" +
-                    " size " + "`" + str(USERS[i]) + " mesaj gönderdi`",
+                    " sizə " + "`" + str(USERS[i]) + " mesaj göndərdi`",
                 )
         COUNT_MSG = 0
         USERS = {}
