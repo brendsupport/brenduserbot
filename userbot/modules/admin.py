@@ -1227,11 +1227,11 @@ CmdHelp('admin').add_command(
     ).add_command(
         'kick', '<istifadəçi adı/cavablama> <səbəbi (istəyə bağlı)>', 'Qrupdan göstərdiyiniz istifadəçini çıxardar.'
     ).add_command(
-        'gmute', '<istifadəçi adı/cavablama> <nedeni (istəyə bağlı)>', 'İstifadəçi idarə etdiyiniz bütün qruplarda səssizə alınır.'
+        'gmute', '<istifadəçi adı/cavablama> <səbəbi (istəyə bağlı)>', 'İstifadəçi idarə etdiyiniz bütün qruplarda səssizə alınır.'
     ).add_command(
         'ungmute', '<istifadəçi adı/cavablama>', 'İstifadəçini qlobal olaraq səssizə alınanlar siyahısından silər.'
     ).add_command(
-        'qruptemizle', None, 'Bir qrupdakı silinmiş hesabları axtarır. Qrupdakı silinən hesabları çıxarmaq üçün .qruptrmize sik əmrini istifadı edin.'
+        'qruptemizle', None, 'Bir qrupdakı silinmiş hesabları axtarır. Qrupdakı silinən hesabları çıxarmaq üçün .qruptemizle sil əmrini istifadə edin.'
     ).add_command(
         'admin', None, 'Söhbət idarəçilərinin siyahısını alır.'
     ).add_command(
