@@ -5,14 +5,10 @@ from userbot.events import register
 from userbot.main import PLUGIN_MESAJLAR, ORJ_PLUGIN_MESAJLAR, PLUGIN_CHANNEL_ID
 from userbot.cmdhelp import CmdHelp
 
-# ██████ LANGUAGE CONSTANTS ██████ #
-
 from userbot.language import get_value
 LANG = get_value("degistir")
 
-# ████████████████████████████████ #
-
-@register(outgoing=True, pattern="^.change ?(.*)")
+@register(outgoing=True, pattern="^.d[eə]yi[sş] ?(.*)")
 @register(outgoing=True, pattern="^.d[eə]yi[sş]dir ?(.*)")
 async def degistir(event):
     plugin = event.pattern_match.group(1)
