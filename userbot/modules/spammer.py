@@ -37,6 +37,24 @@ async def spammer(e):
                 "Spam müvəffəqiyyətlə tamamlandı"
                 )
 
+@register(outgoing=True, pattern="^.bigspam")
+async def bigspam(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        message = e.text
+        messageSplit = message.split(" ", 2)
+        counter = int(messageSplit[1])
+        spam_message = str(messageSplit[2])
+        for i in range(1, counter):
+            await e.respond(spam_message)
+        await e.delete()
+        if BOTLOG:
+            await e.client.send_message(
+                BOTLOG_CHATID,
+                "#BIGSPAM \n\n"
+                "Bigspam uğurla edildi"
+                )
+
+
 @register(outgoing=True, pattern="^.delayspam")
 async def delayspammer(e):
     # Teşekkürler @ReversedPosix
