@@ -1,0 +1,671 @@
+{
+    "__BRENDJSON__": true,
+    "LANGUAGE": "Azərbaycanca",
+    "LANGCODE": "az",
+    "AUTHOR": "t.me/BrendSupport",
+    "STRINGS": {
+        "__plugin": {
+            "REPLY_FOR_PORT": "`Zəhmət olmasa Plugin-Port üçün bir fayla cavab yazın`",
+            "DOWNLOADING": "`Fayl Yüklənir...`",
+            "UNIBORG": "`1. Tip UniBorg aşkar edildi...`",
+            "TOO_MANY_PLUGIN": "`Bu faylın içində birdən çox plugin var, bunu port edə bilmərəm!`",
+            "UPLOADING": "`Port düzgündür fayl yüklənir...`",
+            "UNIBORG2": "`2. Tip UniBorg aşkar edildi...`",
+            "UNIBORG3": "`3. Tip UniBorg aşkar edildi...`",
+            "UNIBORG_NOT_FOUND": "`UniBorg plugini aşkar edilə bilmədi.`",
+            "PLIST_CHECKING": "`Pluginler çağırılır...`",
+            "PLIST": "**Hazırda Yüklənən Pluginlər:**",
+            "TEMP_PLUGIN": "`Pluginleriniz Həmişəlik olaraq yüklənmir, buna görə bir siyahı gətirə bilmirəm.`",
+            "REPLY_TO_FILE": "`Yüklənəcək modul faylına cavab yazın.`",
+            "NOT_FOUND_PLUGIN_CHANNEL": "`Pluginlərin həmişəlik olması üçün Id nizamlamamısınız. Pluginləriniz yenidən başladılan zaman silinə bilər!`",
+            "PLUGIN_BUGGED": "`Yükləmə uğurlu deyil! Plugində xəta aşkar edildi.\n\nXəta: `",
+            "PLUGIN_DESC": "Bu plugin qırağdan botunuz üçün yüklənmişdir. İstifadəsi:",
+            "PLUGIN_DOWNLOADED": "`Modul uğurla yükləndi! %s yazaraq istifadə edə bilərsiniz.`",
+            "PLUGIN_WITHOUT_DESC": "Bu plugin qırağdan yüklənmişdir. İstifadəsi: #ƏMR TAPILMADI#",
+            "PLUGIN_DESCLESS": "`Modul uğurla yükləndi! Ancaq əmri təssüf ki, tapa bilmədim.`",
+            "PLUG_DESC": "Bu plugin qırağdan üçün yüklənmişdir. İstifadəsi: .",
+            "PLUG_MESSAGE": "`Modul uğurla yükləndi! .%s azaraq istifadə edə bilərsiniz.`",
+            "PREMOVE_GIVE_NAME": "`Zəhmət olmasa əmrin yanına bir plugin qeyd edin.`",
+            "PREMOVE_DELETING": "`Plugin Silinir...`",
+            "ALREADY_DELETED": "`Plugin faylı artıq silinib.`",
+            "NOT_FOUND_PLUGIN": "`Belə bir plugin bəlkə var idi, bəlkədə yox. Ancaq hazırda olmadığı dəqiqdir.`",
+            "PLUG_DELETED": "`Plugin uğurla silindi!` **Tətbiq ediləcək əməliyyatlar üçün yenidən başlatmağınız lazımdır.**",
+            "BREND_PLUGIN_CAPTION": "Bu [Brend](https://t.me/BrendUserBot) pluginidir."
+        },
+        
+        "__brend": {
+            "NEED_PLUGIN": "Zəhmət olmasa bir Brend modulu adı yazın.",
+            "NEED_MODULE": "Zəhmət olmasa hansı Brend modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .brend <modul adı>"
+        },
+
+        "__helpme": {
+            "NO_BOT": "`Bot işləmir! Zəhmət olmasa Bot Tokeni və İstifadəçi adını düzgün yazın. Modul dayandırıldı.`"
+        },
+
+        "admin": {
+            "PP_TOO_SMOL": "```Bu şəkil çox balacadır. Zəhmət olmasa daha böyük şəkil istifadə edin```",
+            "PP_ERROR": "```Şəkil emal olunarkən bir xəta baş verdi.```",
+            "NO_ADMIN": "`İdarəçi deyiləm!`",
+            "NO_PERM": "`Lazım olan səlahiyyətə sahib deyiləm!`",
+            "NO_SQL": "`SQL olmayan rejimdə işləyir`",
+            "CHAT_PP_CHANGED": "`Qrup şəkili dəyişdirildi`",
+            "CHAT_PP_ERROR": "`Şəkili yeniləyərkən bəzi xətalar baş verdi.\nBəlkə İdarəçi deyiləm`\n`və yaxud da lazım olan xüsusiyyətlərə sahib deyiləm.`",
+            "INVALID_MEDIA": "```Media etibarlı deyil.```",
+            "PRIVATE": "`Bu əmr xüsusi mesajda istifadə edilə bilməz!`",
+            "EKLE": "`Uğurla əlavə edildi`",
+            "BRAIN": "`Xəta! Bunu Brend Səlahiyyətli birinə edə bilmərəm.`",
+            "BANNING": "`İstifadəçi qara siyahıya əlavə edilir...`",
+            "ALREADY_GBANNED": "`Xəta! İstifadəçi artıq dünya miqyasında qadağan edilmişdir.`",
+            "GBANNED_REASON": "`İstifadəçi dünya miqyasında qadağan edildi!`\n**Səbəbi:**",
+            "GBANNED": "`İstifadəçi dünya miqyasında qadağan edildi!`",
+            "GBAN_TEXT": "```Sən pis birisən! Artıq sənin burada olmağıvı istəmirəm. Qadağan edildin!```",
+            "UNGBANNING": "```Dünya miqyasında qadağa ləğv edilir...```",
+            "NO_BANNED": "`Xəta! Yəqin ki, istifadəçinin qadağası yoxdur.`",
+            "UNGBANNED": "```İstifadəçinin dünya miqyasında qadağası ləğv edildi```",
+            "PROMOTING": "`İcazə verilir...`",
+            "SUCCESS_PROMOTE": "`Uğurla icazə verildi!`",
+            "UNPROMOTING": "`İcazə aşağı salınır...`",
+            "UNPROMOTE": "`İcazə uğurla aşağı salındı!`",
+            "NO_PERM_BUT_BANNED": "`Mesaj yazmağa icazəm yoxdur! Ancaq yenədə istifadəçi qadağan edildi!`",
+            "REASON": "Səbəbi",
+            "UNBANNING": "`Qadağa ləğv edilir...`",
+            "UNBANNED": "```Qadağa uğurla ləğv edildi```",
+            "EXCUSE_ME_WTF": "`Güman edirəm bu adam mənim qadağan etmək məntiqimə uyğun gəlmir`",
+            "NO_MUTE_ME": "`Üzr istəyirəm amma özümü səssizliyə məhkum edə bilmərəm...\n(ヘ･_･)ヘ┳━┳`",
+            "MUTING": "`Səssiz rejime əlavə edilir...`",
+            "ALREADY_MUTED": "`Xəta! İstifadəçi onsuzda səssiz rejimə əlavə edilib.`",
+            "WTF_MUTE": "`Bu adam mənim səssiz rejim məntiqimə uyğun gəlmir`",
+            "UNMUTING": "```Səssiz rejimdən çıxardılır...```",
+            "ALREADY_UNMUTED": "`Xəta! İstifadəçi onsuzda səssiz rejimdən çıxarılıb.`",
+            "UNMUTED": "`İstifadəçi yenidən danışa bilər!`",
+            "GUNMUTING": "```Dünya miqyasında susdurulma ləğv edilir...```",
+            "NO_GMUTE": "`Xəta! Yəqin ki İstifadəçinin hər hansısa bir məhdudiyyəti yoxdur.`",
+            "GMUTING": "`Dünya miqyasında susdurulur...`",
+            "ALREADY_GMUTED": "`Xəta! İstifadəçi onsuzda dünya miqyasında susduruldu.`",
+            "GMUTED": "`İstifadəçi dünya miqyasında susduruldu!`",
+            "NO_ZOMBIE": "`Silinmiş hesab tapılmadı, qrup təmizdir!`",
+            "ZOMBIE": "`Var olmayan/silinmiş/zombi hesaplar  axtarılır...`",
+            "ZOMBIES": "**`Bu qrupda` **{}** `ədəd Var olmayan/ silinmiş / zombi hesab tapıldı,\ntəmizləmək üçün` **.zombies clean** `komandasını icra edin`",
+            "CLEANING": "`Silinmiş hesablar çıxarılır...`",
+            "NO_BAN_YT": "`Bu qrupda ban icazəm yoxdur!`",
+            "DELETED": "ədəd silinmiş hesab qrupdan çıxarıldı",
+            "ADMINS": "qrupunun idarəçiləri",
+            "NEED_MSG": "`Sabitləmək üçün hər hansı bir mesaja cavab yazın!`",
+            "PINNED": "`Uğurla sabitləndi!`",
+            "NOT_FOUND": "`İstifadəçi tapılmadı.`",
+            "KICKING": "`Çıxarılır...`",
+            "KICKED": "qrupdan qovuldu!",
+            "UNWARNING": "`Xəbərdarlıq silinir...`",
+            "UNWARNED": "`Bu şəxsə onsuzda heç vaxt xəbərdarlıq edilməyib!`",
+            "UNWARN": "Xəbərdarlığınız silindi, amma yenə də diqqətli olun! Yeni vəziyyət:",
+            "WARNING": "`Xəbərdarlıq göndərilir...`",
+            "WARN": "dəfə xəbərdar edildi; xaiş edirik diqqətli olun!"
+        },
+
+        "afk": {
+            "REASON": "Səbəb",
+            "AFK": "Sahibim hazırda Xətdə deyil.",
+            "IM_AFK": "Hazırda AFK-yam.",
+            "IM_NOT_AFK": "Artıq AFK deyiləm."
+        },
+
+        "auto": {
+            "INVALID_TYPE": "Naməlum növ. Mövcud növlər: `isim`, `bio`",
+            "ALREADY": "`Hazırda %s onsuzda avtomatik olaraq dəyişir.`",
+            "SETTING": "`%s nizamlanır...`",
+            "BIO": "📅 Tarix: {tarih} | ⌚️ Saat: {saat} | ",
+            "NICK": "@BrendUserbot",
+            "SETTED": "`%s nizamlandı :)`",
+            "NAME": "⏰%s"
+        },
+
+        "autopp": {
+            "VIDEO_ALREADY_CHANGING": "`Görülənə görə Profil videonuz onsuzda avtomatik olaraq dəyişir.`",
+            "NEED_VIDEO": "`Zəhmət olmasa bir videoya cavab yazın!`",
+            "SETTING_VIDEO": "`Profil videonuz nizamlanır..`",
+            "INVALID_VIDEO": "`Verdiyiviz videonu profil videosu olaraq yükləyə bilmərəm!`\n\n**Kömək: **`Telegram tətbiqinizdən bir profil videosu hazırlayın, sonra yükləyin və mənə verin, autovideo plugini bu zaman yaxşı işləyəcək.!`",
+            "STARTED_VIDEO": "`Profil videosu dəyişməyə başladı :)!`",
+            "PHOTO_ALREADY_CHANGING": "`Görülənə görə profil şəkiliniz onsuzda avtomatik olaraq dəyişir.`",
+            "SETTING": "`Profil şəkiliniz...`",
+            "SETTED": "`Profil şəkiliniz nizamlandı :)`"
+        },
+
+        "blacklist": {
+            "FORBIDDEN_KUFUR": "**Bu Qrupda mesaj silmək icazəm yoxdur. Söyüş filtri qoşulmayıb.**",
+            "HAVENT_PERMISSION": "Mesaj silmək icazəm yoxdur!",
+            "USAGE_KUFUR": "`İstifadəsi: .küfür aç/bağla`",
+            "OPENED_KUFUR": "`Söyüş filtri bu qrup üçün təsdiq edildi!`",
+            "CLOSED_KUFUR": "`Söyüş filtri bu qrup üçün ləğv edildi!`",
+            "ALREADY_CLOSED_KUFUR": "`Bu qrup üçün söyüş filtri onsuzda ləğv edilib!`",
+            "ADDED": "ədəd söz bu qrup üçün qara siyahıya salındı.",
+            "BLACKLIST": "Bu qrup üçün qeyd edilən qara siyahı:",
+            "NOT_FOUND": "**Qaralistə əlavə edilmiş söz tapılmadı...** `.addblacklist` **komandası ilə əlavə edə bilərsiniz.**",
+            "BLACKLIST_FILE": "Bu qrup üçün qeyd edilən qara siyahı:",
+            "REMOVED": "**Söz qara siyahıdan çıxardıldı.**"
+        },
+
+        "cevir": {
+            "INVALID_COMMAND": "**Bilinməyən komanda!** `İstifadəsi: .çevir foto/ses/gif`",
+            "NEED_REPLY": "Zəhmət olmasa bir Sticker-ə cavab verin.",
+            "CONVERTING_TO_PHOTO": "Fotoğraf'a çeviriliyor...",
+            "NEED_EFECT": "`Zəhmət olmasa bir effekt qeyd edin. İstifadə edilə biləcək effektlər: ``çocuk/robot/earrape/hızlı/parazit/yankı`",
+            "NEED_SOUND": "`Zəhmət olmasa bir Səs-ə cavab verin.`",
+            "EFECTING": "`Effekt hazırlanır...`",
+            "NOT_FOUND_EFECT": "**Qeyd etdiyiniz effekt tapılmadı! **`İstifadə edə biləcəyiniz effektlər: ``çocuk/robot/earrape/hızlı/parazit/yankı`",
+            "NEED_VIDEO": "`Zəhmət olmasa bir videoya cavab verin!`",
+            "WITH_BREND":"@BrendUserBot `ilə effekt hazırlandı.`",
+            "WITH_BREND_GIF": "@BrendUserBot `ilə Gif'ə çevrildi.`",
+            "CONVERTING_TO_GIF": "Gif'ə çevrilir...",
+            "UPLOADING_GIF": "`Gif yüklənir...`",
+            "ERROR": "Gif'ə çevirə bilmədim :/"
+        },
+
+        "chat": {
+            "USERNAME": "İstifadəçi adı:",
+            "ID": "İstifadəçi ID:",
+            "GROUP": "Qrup ID:",
+            "NEED_LOG": "`Bu xüsusiyyəti aktivləşdirmək üçün giriş açıq olmalıdır!`",
+            "UNMUTED": "`Çatın səsi açıldı`",
+            "MUTED": "`Çat səssiz rejimdədir!`"
+        },
+
+        "degistir": {
+            "SETTED_MEDIA": "üçün medianız qeydə alındı.",
+            "SETTED_REPLY": "üçün mesajınız qeydə alındı.",
+            "SUCCESS_DELETED": "`Plugin mesajı uğurla silindi.`",
+            "ERROR_DELETED": "Plugin mesajı silinə bilmədi.** Xəta",
+            "NOT_FOUND": "**Bilinməyən plugin.** Mesajını silə biləcəyiniz pluginlər",
+            "USAGE": "**Dəyişdir, botdaki plugin-mesajlarını dəyişdirə bilməyiniz üçündür.**\nNümunə İstifadəsi: `.değiştir afk \"Hazırda burda deyiləm... Bəlkədə heç gəlmədim\"`\nPlugin-mesajını silmək: `.değiştir afk`\nDəyişdirə biləcəyiniz plugin-mesajları (indiki): `afk/alive/pm/kickme/dızcı/ban/mute/approve/disapprove/block`",
+            "CANNOT_EMPTY": "Plugin mesajı boş ola bilməz.",
+            "SETTED": "Plugin(`{plu}`) üçün mesajınız(`{msj}`) təsdiqləndi."
+        },
+
+        "covid19": {
+            "SOME_ERRORS": "`Bir xəta baş verdi.`",
+            "DATA": "Koronavirus Məlumatları",
+            "EARTH":"Dünyada",
+            "CASE": "🌎 Xəstə:",
+            "DEATH": "🌎 Ölüm:",
+            "HEAL": "🌎 Sağalan:",
+            "TR": "Türkiyə",
+            "TR_ALL_CASES": "Xəstə (ümumi):",
+            "TR_CASES": "Xəstə (bugün):",
+            "TR_CASE": "Xəstə (aktiv):",
+            "TR_ALL_DEATHS": "Ölüm (ümumi):",
+            "TR_DEATHS": "Ölüm (bugün):",
+            "TR_HEAL": "Sağalan:"
+        },
+
+        "deepfry":{
+            "CANT_DEEPFRY":"`Bunu deepfry edə bilmərəm!`",
+            "REPLY_PHOTO":"`Deepfry edə bilməyim üçün bir şəkilə və yaxud çıkartmaya cavab yazın!`",
+            "MEDIA_DOWNLOADING":"`Media yüklənir...`",
+			"APPLYING_DEEPFRY":"`Media deepfry uyğulanır...`"
+        },
+
+        "dogbin": {
+            "ELON_SAYS": "`Elon Musk boşluğu yapışdıra bilməyəcəyimi dedi.`",
+            "PASTING": "Mətn yapışdırılır . . .",
+            "PASTED": "Uğurla yapıştırıldı!",
+            "URL": "Qısaldılmış URL:",
+            "ORG_URL": "Original (qısaldılmamış) URL",
+            "DOGBIN_URL": "Dogbin URL",
+            "URL_BUT_ENG": "Uğurla yapışdırıldı!",
+            "DOGBIN_NOT_RESPOND": "Dogbine çata bilmədik",
+            "BOTLOG_SENDING": "Dogbine mətn yapışdırması uğurla icra edildi",
+            "DATA_CHECKING": "`Dogbin məzmunu alınır...`",
+            "UNSUPPORTED_URL": "`Bu bir dogbin adressidirmi?`",
+            "HTTP_ERROR": "İstək uğursuz bir status kodunu qaytardı.",
+            "TIMEOUT": "İstək vaxtı gözlədiyimizdən gec oldu.",
+            "TOO_MANY_REDIRECTS": "İstək maksimum konfiqurasiya edilmiş yönləndirmələri keçdi.",
+            "DOGBIN_DATA": "`Dogbin URL məzmunu uğurla gətirildi!`\n\n`Məzmun:`",
+            "DOGBIN_ENDED": "Dogbin məzmun ötürülməsi uğurla həyata keçirildi"
+        },
+
+        "durum": {
+            "VERSION": "Versiya",
+            "PLUGIN_COUNT": "Plugin Sayı",
+            "PERMAMENT": "Ömürlük",
+            "PLUGINS": "Pluginlər",
+            "OK": "Hər Şey Normaldır"
+        },
+
+        "evaluators": {
+            "FORBIDDEN_IN_CHANNEL": "`Kanallarda bu əmrə icazə verilmir`",
+            "NEED_CODE": "`Qiymətləndirmək üçün bir açıqlama verin.`",
+            "WARNING": "`Bu təhlükəli bir əməliyyatdır! Təsdiq olunmayıb!`",
+            "BIG_FILE": "`Çıxış çox böyük, fayl kimi göndərilir`",
+            "QUERY": "Sorğu",
+            "RESULT": "Nəticə",
+            "EMPTY_RESULT": "Nəticə qaytarıla bilmədi / Səhfdir",
+            "ERROR": "İstisna"
+        },
+
+        "ezanvakti": {
+            "NEED_CITY": "Zəhmət olmasa əmrin yanında bir şəhər adı qeyd edin.",
+            "NOT_FOUND": "üçün məlumat tapılmadı.",
+            "DIYANET": "Dini Namaz Vaxtları",
+            "LOCATION": "Yer",
+            "IMSAK": "İmsak",
+            "GUNES": "Günəş",
+            "OGLE": "Günorta",
+            "IKINDI": "Günortadan sonra",
+            "AKSAM": "Axşam",
+            "YATSI": "Gecə"
+        },
+
+        "filter": {
+            "GENEL_USAGE": "`İstifadəsi: ``.genelfilter \"salam aleykum\" as` ya da `.genelfilter sa as`",
+            "GENEL_FILTER": "filtri",
+            "ADDED": "əlavə edildi",
+            "UPDATED": "yeniləndi",
+            "FILTER_USAGE": "`İstifadəsi: ``.filter \"salam aleykum\" as` ya da `.filter sa as`",
+            "NOT_FOUND": "filtri mövcud deyil.",
+            "DELETED": "filtri uğurla silindi",
+            "GENELFILTERS": "`Heç ümumi filter yoxdur.`",
+            "GENEL_FILTERS": "Ümumi filtrlər:",
+            "FILTERS": "`Bu çatda heç bir filter yoxdur.`",
+            "_FILTERS": "Çatdakı filtlər:",
+            "NEED_BOTLOG": "`BOTLOG_CHATID dəyəri filtrə cavab olaraq bir medianın qeyd olunmasından əvvəl təyin olunmalıdır.`"
+        },
+
+        "galeri": {
+            "ADDED_LIST": "`Şəkil növbəyə əlavə edildi.`",
+            "INVALID_URL": "`Səhf bir şəkil URL'i yazdınız. İstifadəsi haqqında bir fikriniz yoxdursa, ` `.brend galeri` `yazın.`",
+            "EXAMPLE": "`Zəhmət olmasa bir şəkil adressi yazın. Nümunə olaraq: ` `.galeri ekle https://i.resimyukle.xyz/7Qbbc9.jpeg`",
+            "LIST": "Növbəyə əlavə etdiyiniz şəkillər",
+            "REMOVED": "**Növbədəki şəkil uğurla silindi**",
+            "REMOVE_ERROR": "**Növbədəki şəkil silinmədi** Xəta",
+            "NEED_NUMBER": "Zəhmət olmasa şəklin sırasını qeyd edin. Nümunə:",
+            "WORKING": "`Hal-hazırda Qalareya işləyir.`",
+            "STARTED": "`Qalareya işləməyə başladı.`",
+            "NEED_PHOTO": "Qalereya işi üçün fotoşəkillər əlavə etməlisiniz. Əlavə etməyi bilmirsinizsə, .brend galeri ilə istifadəsini öyrənə bilərsiniz.",
+            "STOPPED": "`Qalereya dayandı!`",
+            "ALREADY_STOP": "`Qalareya onsuzda işləmir.`",
+            "INVALID": "**Bilinməyən komanda** İstifadəsi:\n\nQalareyaya şəkil əlavə etmək: `.galeri ekle https://i.resimyukle.xyz/7Qbbc9.jpeg`\nQalareya siyahısını görmək: `.galeri liste`\nSıradan bir şəkil silmək: `.galeri sil <sıra sayı>`"
+        },
+
+        "github": {
+            "INFO": "adlı istifadəçinin GitHub məlumatları",
+            "NAME": "Ad",
+            "COMPANY": "Şirkət",
+            "CREATED": "Hesabı yaratma tarixi",
+            "REPOS": "Repolar:",
+            "NOT_FOUND": " tapılmadı`"
+        },
+
+        "lastfm": {
+           "BIO_ENABLED": "```last.fm-də səslənən bir musiqinin bioya əlavə edilməsi aktivdir.```",
+           "BIO_DISABLED": "```last.fm-də səslənən musiqinin bioya əlavə edilməsi deaktivdir. Bioqrafiya defolt halına gətirildi.```",
+           "BIO_RUNNING": "```Last.fm-də səslənən musiqinin bioya əlavə edilməsi hazırda aktivdir.```",
+           "BIO_ERR": "```Seçim göstərilməyib.```",
+           "LOG_ENABLED": "```last.fm bot qeydləri hazırda aktivdir.```",
+           "LOG_DISABLED": "```last.fm bot qeydləri deaktivdir.```",
+           "LOG_ERR": "```Seçim göstərilməyib.```",
+           "ERROR_MSG": "```last.fm modulu gözlənilməz bir səhvə görə dayandırıldı.```"
+        },
+
+        "liste": {
+            "WRONG_INPUT": "**Bilinməyən komanda!** `İstifadəsi: .liste gmute/gban`",
+            "NEED_SQL_MODE": "`Bu xüsusiyyət qeyri-sql rejimində işləmir!`",
+            "GBANNED_USERS": "`Qlobal olaraq qadağan olunmuş istifadəçilər gətirilir...`",
+            "TOO_MANY_GBANNED": "`Vay! Vay! Bir çox insana qadağa qoymusuz. Fayl kimi göndərirəm...`",
+            "GBAN_TXT": "**Qlobal olaraq qadağan etdiyiniz istifadəçilər**\n\n**Kömək:** Qadağan etdiyiniz istifadəçilər haqqında daha çox məlumat əldə etmək üçün  `.whois id` istifadə edə bilərsiniz.",
+            "GBAN_LIST": "**Qlobal olaraq qadağan etdiyiniz istifadəçilər:**\n%s\n\n**Kömək:** Qadağan etdiyiniz istifadəçilər haqqında daha çox məlumat əldə etmək üçün `.whois id` istifadə edə bilərsiniz.",
+            "GMUTE_DATA": "`Qlobal olaraq səssiz istifadəçilər gətirilir...`",
+            "GMUTE_LIST_MESSAGE": "**ID: **`%s`\n",
+            "TOO_MANY_GMUTED": "`Vay! Vay! Bir çox insana susdurulma vermisiniz. Fayl kimi göndərirəm...`",
+            "GMUTE_LIST": "**Qlobal olaraq səssizləşdirdiyiniz istifadəçilər:**\n%s\n\n**Kömək:** Susdurduğunuz istifadəçilər haqqında daha çox məlumat əldə etmək üçün `.whois id` istifadə edə bilərsiniz.",
+            "GMUTE_TXT": "**Qlobal olaraq səssizləşdirdiyiniz istifadəçilər**\n\n**Kömək:** Susdurduğunuz istifadəçilər haqqında daha çox məlumat əldə etmək üçün `.whois id` istifadə edə bilərsiniz."
+        },
+
+        "lydia": {
+            "DATABASE_ERROR": "Lydia verilənlər bazası bağlantısı alınmadı",
+            "WORKING": "`Hazırlanır...`",
+            "LYDIA_SAYS": "**Lydia deyir ki**: {}",
+            "SQL_OFF": "Hazırda qeyri SQL rejimində işləyir...",
+            "REPLY_USER_ERR": "Yanlış istifadəçi növü.",
+            "LYDIA_ACTIVATED": "Lydia, {} istifadəçisi üçün {} çatında uğurla aktiv edildi!",
+            "REPLY_FOR_ACTIVATE": "Lydia AI-nı aktivləşdirmək üçün bir istifadəçiyə cavab verin",
+            "LYDIA_DEACTIVATED": "Lidiya, {} istifadəçi üçün {} çatında uğurla deaktiv edildi!",
+            "LYDIA_OFF_FOR_USER": "Lydia bu istifadəçidə aktiv deyil."
+        },
+
+        "lyrics": {
+            "WRONG_TYPE": "`Xəta: zəhmət olmasa <müğənni> və <mahnı> üçün bölücü olaraq '-' istifadə edin`\nNümunə: `Duman - Haberin Yok Ölüyorum`",
+            "GENIUS_NOT_FOUND": "`Zəhmət olmasa Genius tokenini təyin edin`",
+            "GIVE_INFO": "`Zəhmət olmasa ifaçı və mahnı adını verin`",
+            "SEARCHING": "`{} - {} üçün mahnı sözləri axtarılır...`",
+            "NOT_FOUND": "Mahnı **{} - {}** tapılmadı!",
+            "TOO_LONG": "`Mahnı sözləri çox uzundur, görmək üçün fayla baxın.`",
+            "LYRICS": "**Axtarış sorğusu**:",
+            "SINGER_ERROR": "`Xəta: zəhmət olmasa <müğənni> və <mahnı> üçün bölücü olaraq '-' istifadə edin`\nNümunə: `Duman - Haberin Yok Ölüyorum`",
+            "SINGER_LYRICS": "🎙 Qulaqlarınızın paslarını siləcəm! {}'dan {} gəlir!",
+            "SINGER_ENDED": "🎙Çox yaxşı dedim, düzdü?"
+        },
+
+        "locks":{
+		    "EVERYTHING_LOCK": "`Dostum olmayan birşeyi qıfıllaya bilmirəm!`",
+			"INVALID_MEDIA_TYPE": "`Səhf media növü: %s`",
+			"LOCK": "`%s bu çat üçün qıfıllandı`",
+			"INVALID_AUTHORITY": "`Bunu etmək hüququna sahib olduğunuzdan əminsiniz?`\n**Xəta:**",
+			"EVERYTHING_UNLOCK": "`Olmayan birşeyin qıfılını aça bilmirəm!`",
+			"UNLOCK": "`Bu çat üçün %s qıfılı açıldı`"
+        },
+
+        "misc": {
+            "REPLY_TO_FILE": "`Bir fayla cavab verin.`",
+            "QUERY": "Sorğu",
+            "RESULT": "Nəticə",
+            "NEED_MUCH_DATA_FOR_RANDOM": "`2 və ya daha çox məhsul tələb olunur. Daha çox məlumat üçün .brend təsadüfi əmrini daxil edin.`",
+            "SLEEP_DESC": "İstifadə qaydası: `.sleep [saniyə]`",
+            "SLEEPING": "`Xoruldayaraq yatıram...`",
+            "GOODMORNIN_YALL": "`Sabahınız xeyir!`",
+            "GOODBYE_MFRS": "`Görüşənədək... *Windows XP söndürlmə səsi*`",
+            "RESTARTING": "`Bot yenidən qoşulur..`",
+            "SUPPORT_GROUP": "[Buradan](http://t.me/BrendSupport) Dəstək qrupumuza çata bilərsiniz.",
+            "CREATOR": "Bu bot \n[Hüseyn](https://t.me/Mr_HD_20) tərəfindən hazırlanmışdır. \n",
+            "README": "[Brend README.md](https://github.com/brendsupport/brenduserbot/blob/main/README.md)",
+            "REPO": "[Brend Repo](github.com/brendsupport/brenduserbot)",
+            "CHECK_LOGS": "`Tapılmış Mesaj üçün istifadəçi qeydlərini yoxlayın!`"
+        },
+
+        "notes": {
+            "NOT_FOUND": "`Bu çatda qeyd tapılmadı`",
+            "NOTES": "Bu çatda qeydiyyatlı qeydlər",
+            "CLEAR_NOT_FOUND": "qeydi tapa bilmədim",
+            "CLEAR": "qeyd uğurla silindi",
+            "SUCCESS": "Qeyd uğurudur",
+            "UPDATED": "yeniləndi",
+            "ADDED": "əlavə edildi",
+            "CALL": "komandası ilə qeydi çağıra bilərsiniz"
+        },
+
+        "ocr": {
+            "READING": "`Oxunur...`",
+            "CANT_READ": "`Bunu oxuya bilmədim.`\n`Deyəsən yeni eynəklərə ehtiyacım var.`",
+            "READ": "Əla bax budur oxuya bildiyim şey:"
+        },
+
+        "pmpermit": {
+            "BLOCKED": "`Sən mənim Sahibimin PM-sını spamlayırsan, bu mənim heç xoşuma gəlmir.`\n`Hazırda BLOKLANDIN və SPAM olaraq bildirildin, gələcəkdə dəyişiklik olmadığı ərəfəyədək..`",
+            "ERROR": "PM sayğacı başını itirmiş kimidir, botu zəhmət olmasa yenidən başladın.",
+            "BOTLOG_BLOCKED": " adamı sadəcə bir xəyal qırıqlığı idi. PM-nı məşğul etdiyi üçün bloklandı.",
+            "NOTIFOFF": "`PM icazəsi olmayan istifadəçilərin bildirişləri səssizə alındı!`",
+            "NOTIFON": "`PM icazəsi olmayan istifadəçilərin bildiriş göndərməsinə icazə verildi!`",
+            "ALREADY": "`İstifadəçi hal-hazırda PM göndərə bilməlidir.`",
+            "DISAPPROVE": "istifadəmisinin PM göndərə bilmə icazəsi ləğv edildi.",
+            "UNBLOCKED": "Qadağan qaldırıldı."
+        },
+
+        "profile": {
+            "INVALID_MEDIA": "```Media etibarlı deyil.```",
+            "PP_CHANGED": "```Profil şəkli uğurla dəyişdirildi.```",
+            "PP_TOO_SMOL": "```Bu şəkil çox kiçikdir, daha böyük bir şəkil istifadə edin.```",
+            "PP_ERROR": "```Şəkil hazırlanarkən xəta baş verdi.```",
+            "BIO_SUCCESS": "```Bioqrafiya uğurla dəyişdirildi.```",
+            "NAME_OK": "```Adınız uğurla dəyişdirildi.```",
+            "USERNAME_SUCCESS": "```İstifadəçi adınız uğurla dəyişdirildi.```",
+            "USERNAME_TAKEN": "```İstifadəçi adı mövcud deyil.```",
+            "USERS": "İstifadəçilər",
+            "GROUPS": "Qruplar",
+            "SUPERGROUPS": "Super qruplar",
+            "CHANNELS": "Kanallar",
+            "BOTS": "Botlar",
+            "DELPFP": "%s profil şəkilləri silindi."
+        },
+
+        "purge": {
+            "NEED_MSG": "`Təmizləməyə başlamaq üçün bir mesaja ehtiyacım var.`",
+            "PURGED": "`Sürətli təmizləmə başa çatdı!\n{} ədəd mesaj silindi.`",
+            "PURGED_ME": "`Təmizlik başa çatdı {} ədəd mesaj silindi.`"
+        },
+
+        "qrcode": {
+            "ERROR": "`Decode uğursuz oldu.`",
+            "TRYING": "**Hazırlanır...**",
+            "USAGE": "**İstifadəsi: **",
+            "TEXT": "əlavə ediləcək uzun mətin"
+        },
+
+        "remove_bg": {
+            "NEED_API_KEY": "`Xəta: Remove.BG API key yoxdur! Zəhmət olmasa, gözləyin.`",
+            "TRYING": "`Hazırlanır...`",
+            "RBG": "`Arxa fon bu şəkildən silinir...`",
+            "CANT_RBG": "`Bunun arxa fonunu necə silə bilərəm?`",
+            "ONLINE_RBG": "Onlayn görüntüdən arxa fonu silin",
+            "NEED": "`Arxa fonu silmək üçün bir şeyə ehtiyacım var.`",
+            "CAPTION": "Remove.bg arxa fon istifadə edərək silindi",
+            "ERROR": "Xəta (Səhf API key olduğunu zənn edirəm..)"
+        },
+
+        "reverse": {
+            "NEED_REPLY": "`Zəhmət olmasa bir fotoya və ya stikerə cavab verin.`",
+            "TRYING": "Hazırlanır...",
+            "INVALID_TYPE": "Dəstəklənməyən tip",
+            "UPLOADED_TO_GOOGLE": "`Şəkil uğurla Google-a yükləndi.\nİndi resurs təhlil olunur.`",
+            "FUCKOFF": "Google mənə onun olduğu yerdən çıxıb getməyimi dedi",
+            "SEARCHING_PHOTO": "Şəkil axtarıram",
+            "NOT_FOUND": "`Heçnə tapa bilmədim`",
+            "SIMILAR": "Oxşar görüntülər"
+        },
+
+        "rgb": {
+            "NEED_TEXT": "`Zəhmət olmasa komandanın yanında bir mətn yazın`",
+            "CONVERTING": "`Şəkilə çevrilir...`"
+        },
+        
+        "scrapers_bot": {
+            "REPLY_TO_MSG": "İstənilən istifadəçinin mesajına cavab verin.",
+            "REPLY_MSG": "Mesaja cavab verin",
+            "REPLY_BOT_ERROR": "Botlara cavab verə bilmərsiniz",
+            "WORKING_ON": "Hazırlanır...",
+            "BLOCKED_ERROR": "Zəhmət olmasa {chat}-ı blokdan çıxarın və yenidən cəhd edin",
+            "NOT_RESPONSE": "Botdan cavab ala bilmedim!",
+            "USER_PRIVACY": "Məxfilik ayarlarına görə cavab ala bilmədim",
+            "REPLY_TO_MEME": "İstifadəsi: Zəhmət olmasa bir mesaja cavab olaraq yazın. Nümunə: .meme üst; alt",
+            "REPLY_TO_PHOTO": "Bir fotoya / stikerə / gifə cavab verin.",
+            "REPLY_TO_BOT": "Həqiqi bir istifadəçinin mesajına cavab verin.",
+            "MEMING": "Memeleniyor! (」ﾟﾛﾟ)｣",
+            "MEMEBOT_BLOCKED": "Xahiş edirəm @MemeAutobot-un blokundan çıxarın və yenidən cəhd edin.",
+            "NOT_A_PHOTO": "Bu şəkil deyil! Gözlə, mən onu şəkilə çevirəcəm.",
+            "FILE_NOT_FOUND": "Fayl tapılmadı",
+            "MEMIFY_CAPTION": "Memified using @MemeAutoBot",
+            "NOT_VALID_FORMAT": "Naməlum mesaj növü!",
+            "REPLY_TO_MESSAGE": "Zəhmət olmasa bir mesaja cavab verin.",
+            "REPLY_TO_FILE": "Zəhmət olmasa bir fayla cavab verin.",
+            "REPLY_USER_ERR": "Xahiş edirəm bir istifadəçinin mesajına cavab verin.",
+            "MIZAH_EXE": "Musallet.exe var mı yoxdurmu baxıram...",
+            "BLOCKED_CHAT": "Pfff deyəsən` %s `bloklanmısan. Zəhmət olmasa bloku aç.",
+            "PRIVACY_ERROR": "Məxfilik ayarlarına görə cavab ala bilmədim",
+            "WAIT_EDIT": "Zəhmət olmasa gözləyin...",
+            "SCAN_RESULT": "Virus axtarışı bitdi. Nəticələr bunlardır",
+            "SCANNING": "Fayl taranır...",
+            "CLEAN": "Virus axtarışı bitdi. Bu fayl təmizdir. Keç!",
+            "VIRUS_DETECTED": "Virus axtarışı bitdi. Whopsie! Bu fayl təhlükəlidir. Yükləməyin!",
+            "CALCULATING_TIME": "Tarix hesablanır....",
+            "PRIVACY_ERR": "Məxfilik ayarlarına görə cavab ala bilmədim",
+            "CREATION_REPORT": "Raport hazırdır",
+            "READING": "Oxuyuram... A B C...",
+            "OCR_ERROR": "Şübhəsiz ki, bir şey oldu. Oxuya bilmədim.",
+            "SEE_SOMETHING": "Bir şeylər oxudum",
+            "VOICY_WAITING": "Ses dinlənir... Erkan enegtarlar...",
+            "VOICY_LANG_ERR": "`Botu başlatmalı və Azərbaycanca etməlisiniz.`",
+            "VOICY_ERR": "`Səs pozulur, səs. Dediklərinizi anlamadım.`",
+            "HEAR_SOMETHING": "Bir şey eşitdim",
+            "CANT_REPLY_BOTS": "`Siz botlara cavab verə bilməzsiniz.`",
+            "QUOTING": "`Sitat gətirir ...`",
+            "UNBLOCK_QUOTLY": "`Xahiş edirəm @QuotLyBot'u blokdan çıxarın və yenidən cəhd edin '",
+            "QUOTLY_VALUE_ERR": "`Yalnız rəqəmlər daxil edə bilərsiniz! Nümunə: ``.q 2`"
+        },
+
+        "screencapture": {
+            "TRYING": "`Hazırlanır...`",
+            "TAKING": "`Səhifənin ekran görüntüsünün yaradılır...`",
+            "INVALID_URL": "`Ekran şəkli çəkməyimdən əvvəl etibarlı bir keçid verməlisiniz.`",
+            "PIXEL": "piksel",
+            "HEIGHT": "Səhifənin hündürlüyü",
+            "WIDTH": "Səhifənin eni",
+            "WAIT": "\n`Səhifənin yüklənməsi üçün %s saniyə gözləndi`",
+            "UPLOADING": "`Ekran görüntüsü yüklənir ...`"
+        },
+
+        "snips": {
+            "NO_SQL": "`SQL olmayan rejimdə işləyir!`",
+            "NEED_BOTLOG": "`Snipləri mediada saxlamaq üçün BOTLOG_CHATID ayarlanmalıdır.`",
+            "USAGE": "İstifadəsi",
+            "UPDATED": "yeniləndi",
+            "SAVED": "yaddaşa verildi",
+            "NO_SNIP": "`Hazırda heçbir snip yoxdur.`",
+            "SNIPS": "Mövcud sniplər",
+            "DELETED": "Uğurla silindi",
+            "NOT_FOUND": "Tapılmadı"
+        },
+
+        "song": {
+            "GIVE_ME_SONG": "** Mənə bir mahnı ver!** `İstifadəsi: .deez mahnı adı/youtube/spotify/soundcloud`",
+            "SEARCHING": "`Musiqi axtarılır...`",
+            "BLOCKED_DEEZER": "`Mmmh deyəsən` @DeezerMusicBot `bloklamısan zəhmət olmasa bloku aç",
+            "NOT_FOUND": "`Axtardığınız mahnı tapılmadı! Bağışlayın.`",
+            "UPLOADED_WITH": "@BrendUserBot ilə yükləndi",
+            "USAGE": "`İstifadəsi:` `.song mahnı ad/youtube url/spotify url`",
+            "SEARCHING_SPOT": "`Mahnıların axtarışı və yüklənməsini gözləyin!",
+            "DOWNLOADED": "`Yükləmə uğurlu oldu, xahiş edirəm gözləyin.`",
+            "UPLOADING": "Mahnı yüklənir!",
+            "USAGE_PL": "`İstifadəsi: .songpl spotify playlist url`",
+            "SEARCHING_PL": "`Playlist axtarılır və yüklənir zəhmət olmasa gözləyin`",
+            "SENDING_SONGS": "Mahnı göndərilir Mahnı:",
+            "NOT_FOUND_PL": "`Axtardığınız playlist tapılmadı.Bağışayın.`"
+        },
+
+        "spotify": {
+            "BIO_ENABLED": "`Spotify plagini aktivdir. Spotify-da dinlədiyiniz mahnılar tərcümeyi-halınıza yazılacaq.`",
+            "BIO_DISABLED": "`Spotify plagini deaktivdir. Bioqrafiya əvvəlki halına qayıtdı.`",
+            "BIO_RUNNING": "`Spotify plagini artıq işləyir.`",
+            "ERROR": "`Spotify plagini dayandı. Xəta alındı.`",
+            "ERROR_NP": "`Hata! Spotify'da çalan şarkı getirilemedi!`",
+            "ERROR_TOKEN": "`Bot Spotify ayarları yapılmamış!`",
+            "NP_NONE": "`Şu anda Spotify'da bir şey dinlemiyorum!`",
+            "NP_GET": "`Spotify'da dinlediğim şarkı getiriliyor...`"			
+        },
+
+        "stickers": {
+            "GIVE_STICKER": "`Dızlaya bilməyim üçün bir Sticker və ya şəkil verməlisən`",
+            "FAIL_DOWNLOAD": "`Sticker yüklənə bilmədi! Bir şəkil və ya Sticker göndərdiyinizə əmin olun.`",
+            "NEW_PACK": "`Sticker paket yaradılmadı! Yeni bir paket yaradılır ...`",
+            "TOO_STICKERS": "`Paket sahəsi yetərli olmadığı üçün nömrələnmiş paketə {} keçid edilir ...`"
+        },
+
+        "system_stats": {
+            "NO_NEOFETCH": "`Əvvəlcə neofetch modulunu quraşdırın!`",
+            "VERSION": "UserBot Versiyası",
+            "REVOUT": "Ümumi dəyişiklik",
+            "SEARCHING": "Axtarılır",
+            "BIG": "`Dəyişikliklərin siyahısı çox böyükdür, ona bir fayl kimi baxmalısınız.`",
+            "QUERY": "Sorğu",
+            "RESULT": "Nəticə",
+            "NOT_FOUND": "Heçnə tapılmadı",
+            "EXAMPLE": "`Bir nümunə görmək üçün .brend pip əmrindən istifadə edin.`"
+
+        },
+
+        "time": {
+            "CLOCK": "Burada saat",
+            "INVALID_COUNTRY": "`Səhf ölkə.`",
+            "TOO_TIMEZONE": "ölkənin birdən çox saat qurşağı var",
+            "CHOICE_TIMEZONE": "Rəqəm göstərərək birini seçin",
+            "EXAMPLE": "Nümunə",
+            "IS_CLOCK": "ölkəsində saat",
+            "IS_TZ": "saat zonanısında",
+            "DATE": "Burada tarix",
+            "IS_DATE": "ölkəsində tarix"
+        },
+
+        "updater": {
+            "DETECTING": "`Yenilənmələr yoxlanılır...`",
+            "FAILED": "Yeniləmə alınmadı! Bəzi problemlərlə qarşılaşdıq.",
+            "NOT_FOUND": "qovluğu tapa bilmədi",
+            "GIT_ERROR": "Git xətası!",
+            "NOT_GIT": "qovluğlu bir git reposu kimi görünmür. \nAncaq botu .update now əmri ilə zorla yeniləməklə bu problemi həll edə bilərsiniz.",
+            "INVALID_BRANCH": "**[UPDATER]:**` Düşünürəm ki, Brend botunuzu dəyişdirdiniz və öz filialınızdan istifadə edirsiniz.\nBu vəziyyət yenilənməni edənin başını qarışdırır,\nGüncəllənmə haradan çəkiləcək?\nXahiş edirəm rəsmi repodan brend Botunu istifadə edin.`",
+            "UPDATE": "\n`Botun` **Ən güncəl versiyadadır!** `Branch:` **{}**\n",
+            "WAS_UPDATE": "**{} üçün yeni güncəlləmə mövcuddur!\n\nDəyişikliklər:**\n`{}`",
+            "BIG": "`Dəyişikliklərin siyahısı çox böyükdür, ona bir fayl kimi baxmalısınız.`",
+            "DO_UPDATE": "`Güncəllənməni etmək üçün \".update now\" komandasını istifadə edin.`",
+            "FORCE_UPDATE": "`Cari sabit istifadəçi bot kodu zorla sinxronizasiya olunur...`",
+            "UPDATING": "`Bot yenilənir...`",
+            "INVALID_APPNAME": "`[HEROKU UPDATER] Güncəlləmədən istifadə etmək üçün HEROKU_APPNAME dəyişənini təyin etməlisiniz.`",
+            "INVALID_HEROKU": "{}\n`Heroku dəyişənləri səhv və ya müəyyənləşdirilmişdir.`",
+            "HEROKU_UPDATING": "`[HEROKU UPDATER]\nUserBot-unuzun daha yaxşı olacağına əmin ola bilərsiniz :) Bu müddət maksimum 10 dəqiqə çəkir.`",
+            "ERRORS": "Qarşılaşdığımız səhflər bunlardır",
+            "SUCCESSFULLY": "`Yeniləmə uğurla başa çatdı! \n Yenidən yüklənir ...`"
+        },
+
+        "upload_download": {
+            "FILENAME": "Fayl Adı",
+            "DAY": "gün",
+            "URL": "Bağlantı",
+            "ETA": "Təxmini bitiş",
+            "SUCCESSFULLY": "`{}` Məkana endirmə uğurlu oldu.",
+            "INVALID_URL": "Yanlış keçid\n{}",
+            "DOWNLOADING": "`Yüklənir...`",
+            "NEED_REPLY": "`Bir mesajı serverimə yükləmək üçün cavablandırın.`",
+            "TRYING": "`Hazırlanır...`",
+            "FOUND_FILES": "**{} fayl tapıldı.** `Yükləmə tezliklə başlayacaq. Zəhmət olmasa, gözləyin :)`",
+            "UPLOADING": "`Yüklənir...`",
+            "SUCCESSFULLY_MULTI_UPLOADED": "`{} fayl uğurla yükləndi.`",
+            "WARNING": "`Bu təhlükəli bir əməliyyatdır! Təsdiq olunmayıb!`",
+            "SUCESSFULLY_UPLOADED": "**Yükləmə uğurlu oldu!**",
+            "NOT_FOUND": "Fayl tapılmadı",
+            "DOWNLOADED": "`{}, {} saniyədə yükləndi.`",
+            "UNZIPPING": "`Yükləmə uğurlu oldu! Fayl Zipdən çıxardılır!`",
+            "REPLY_TO_ZIP": "`Xahiş edirəm bir Zip-ə cavab verin!`",
+            "NOT_FOUND_HOST": "Göstərilən host tapılmadı! Tapılan hostlar: anonfiles|transfer|filebin|tmpninja|anonymousfiles|megaupload|bayfiles|letsupload|vshare`",
+            "WUPLOADING": "`Fayl yüklənmə uğurludur. Yüklənir...`",
+            "GETTING_LINK": "`Uğurla quraşdırıldı. Link əldə edilir...`"
+        },
+
+        "weather": {
+            "NEED_API_KEY": "`Əvvəlcə` https://openweathermap.org/ `adresindən Bir API açarı almalısınız.`",
+            "NO_CITY": "`WEATHER_DEFCITY Dəyişən adı ilə varsayılan olaraq bir şəhər təyin edirsiniz və ya əmri yazdığınız zaman hansı şəhərin havasını istədiyinizi göstərirsiz!`",
+            "INVALID_COUNTRY": "`Səhf ölkə.`",
+            "TEMP": "İstilik",
+            "MIN_TEMP": "Ən Aşağı İstilik",
+            "MAX_TEMP": "Ən Yüksək İstilik",
+            "HUMIDITY": "Nəm",
+            "WIND_SPEED": "Külək sürrəti",
+            "SUNRISE": "Gündoğumu",
+            "SUNSET": "Günbatımı"
+        },
+
+        "whois": {
+            "GETTING_DATA": "`Məlumatı oğurlayıram  ... Xahiş edirəm gözləyin...`",
+            "FAILED_GETTING_DATA": "`Bu istifadəçinin məlumatlarını ala bilmədim.`",
+            "NO_PROFILE_PHOTO": "Şəxsin profil şəklini yükləyəməy üçün köməyə ehtiyac var.",
+            "NO_DC_ID": "DC ID gətirə bilmədim",
+            "NO_FIRST_NAME": "Bu istifadəçinin adı yoxdur",
+            "NO_LAST_NAME": "Bu istifadəçinin soyadı yoxdur",
+            "NO_USERNAME": "Bu istifadəçinin istifadəçi adı yoxdur",
+            "NO_BIO": "Bu istifadəçinin biosu boşdur",
+            "USER_INFO": "İSTİFADƏÇİ BİLGİLƏRİ",
+            "NAME": "Ad",
+            "LASTNAME": "Soyad",
+            "NICKNAME": "İstifadəçi Adı",
+            "DC_ID": "Məlumat mərkəzi ID",
+            "PROFILE_PHOTO_COUNT": "Profil şəkillərinin sayı",
+            "IS_BOT": "Bot-durmu",
+            "IS_RESTRICTED": "Məhduddurmu",
+            "IS_VERIFIED": "Telegram tərəfindən təsdiqləndimi",
+            "BIO": "Biosu",
+            "COMMON_CHAT": "Bu istifadəçi ilə ortaq söhbətlər",
+            "LINK": "Profil üçün daimi əlaqə"
+        },
+        "www": {
+            "SPEED": "`Sürət testi hesablanır...`",
+            "STARTED_TIME": "Başlama Tarixi: ",
+            "DOWNLOAD_SPEED": "Yükləmə Sürrəti: ",
+            "UPLOAD_SPEED": "Upload Sürrəti: ",
+            "ISP": "İnternet xidməti təminatçısı: "
+        }
+    }
+}

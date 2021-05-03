@@ -1,0 +1,244 @@
+{
+  "name": "Brend UserBot",
+  "description": "Brend UserBot",
+  "logo": "https://telegra.ph/file/7e28bcc4d986fb2099150.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+	"Brend",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/brendsupport/brenduserbot",
+  "website":   "https://github.com/brendsupport/brenduserbot",
+  "success_url": "https://github.com/brendsupport/brenduserbot",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "Bu məlumatı my.telegram.org saytından alın.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Bu məlumatı my.telegram.org saytından alın.",
+      "required": true
+    },
+    "PLUGIN_CHANNEL_ID": {
+      "description": "İstəyə bağlıdır.",
+      "required": false
+    },
+    "SPOTIFY_DC": {
+      "description": "Spotify bio üçün lazım olan məlumat",
+      "required": false
+    },
+    "SPOTIFY_KEY": {
+      "description": "Spotify bio üçün lazım olan açar",
+      "required": false
+    },
+    "STRING_SESSION": {
+      "description": "python3 GenerateStringSession.py faylını işlədərək bu məlumatı alın.",
+      "required": true
+    },
+    "HEROKU_MEMEZ": {
+      "description": "UserBot bir Heroku dyno ilə işləyirsə, bu məlumat True olmalıdır.",
+      "value": "True",
+      "required": true
+    },
+    "HEROKU_APIKEY": {
+      "description": "Heroku API Key, 'https://dashboard.heroku.com/account' adresindən alın.",
+      "value": ""
+    },
+    "HEROKU_APPNAME": {
+      "description": "Heroku proqram adını buraya əlavə edin. UserBot yenilənmələrində lazım olur.",
+      "required": true
+    },
+    "UPSTREAM_REPO_URL": {
+      "description": "Original repodur.Əgər forklamısızsa linki buraya yağışdırın.",
+      "value": "https://github.com/brendsupport/brenduserbot",
+      "required": true
+    },
+    "COUNTRY": {
+      "description": "Ölkənizi .saat və .tarix əmrlərində istifadə edəcək  şəkildə qəbul edin. Standart olaraq Azərbaycan qəbul edilmişdir.",
+      "value": "Azerbaijan",
+      "required": false
+    },
+    "TZ_NUMBER": {
+      "description": "Ölkənizdə birdən çox saat qurşağı varsa bu məlumatı dəyişdirin.",
+      "value": "1",
+      "required": false
+    },
+    "TZ": {
+      "description": "Bunun nə olduğu haqqda fikrin yoxdursa keç.",
+      "value": "Asia/Baku",
+      "required": true  
+    },
+    "CHROME_DRIVER": {
+      "description": "Selenium əsaslı modullar üçün ChromeDriver ünvan.",
+      "value": "/usr/bin/chromedriver",
+      "required": false
+    },
+    "GOOGLE_CHROME_BIN": {
+      "description": "Selenium əsaslı modullar üçün Google Chrome (və ya) Chromium binary ünvanı.",
+      "value": "/usr/bin/chromium-browser",
+      "required": false
+    },
+    "OPEN_WEATHER_MAP_APPID": {
+      "description": "https://api.openweathermap.org/data/2.5/weather ünvanından APPID'inizi (API key) əldə edin.",
+      "required": false
+    },
+    "BOTLOG": {
+      "description": "# ƏL VURMA #",
+      "value": "False"
+    },
+    "BOT_USERNAME": {
+      "description": "İnline bot xüsusiyyətinin işləməsi üçün tələb olunur. Burada bot istifadəçi adınızı yazmalısınız (Nümunə: @BrendUserbot). Bir botunuz yoxdursa, @BotFather köməyi ilə bir bot yarada bilərsiniz.",
+      "required": false  
+    },
+    "BOT_TOKEN": {
+      "description": "İnline bot xüsusiyyətinin işləməsi üçün tələb olunur. Budur bot token yazmalısan. Bir botunuz yoxdursa, @BotFather köməyi ilə bir bot yarada bilərsiniz.",
+      "required": false    
+    },
+    "GENIUS": {
+      "description": "Burada aldığınız Genius API Token-i daxil edin.",
+      "required": false
+    },
+    "AUTO_PP": {
+      "description": "Autopp modulunun işləməsi üçün tələb olunan dəyişəndir. İşləmək üçün istifadə edəcəyiniz şəklin birbaşa ünvanını daxil etməlisiniz.",
+      "required": false      
+    },
+    "BOTLOG_CHATID": {
+      "description": "BotLOg qrupunun ChatID. BOTLOG = False /və ya LOGSPAMMER=False olduqda onu '0' olaraq təyin edin.",
+      "value": "0"
+    },
+    "CONSOLE_LOGGER_VERBOSE": {
+      "description": "Konsol jurnalında detallara ehtiyacınız varsa, bunu True olaraq ayarlayın.",
+      "value": "False"
+    },
+    "PM_AUTO_BAN": {
+      "description": "PM Avtomatik Qadağa Xüsusiyyəti. 'Hey! Bu bir bot.' modul.",
+      "value": "False"
+    },
+    "PM_AUTO_BAN_LIMIT": {
+      "description": "PM Auto Ban limiti. İstifadəçi sizə x mesaj göndərirsə bloklanacaq.",
+      "value": "4",
+      "required": false
+    },
+    "YOUTUBE_API_KEY": {
+      "description": ".yt əmri üçün YouTube Data API əsasdır. Https://console.cloud.google.com saytından əldə edin.",
+      "required": false
+    },
+    "OCR_SPACE_API_KEY": {
+      "description": ".ocr əmri üçün OCR API açarı. Https://ocr.space/ocrapi saytından əldə edin.",
+      "required": false
+    },
+    "REM_BG_API_KEY": {
+      "description": ".rbg əmri üçün API açarı. Https://www.remove.bg/api saytından əldə edin.",
+      "required": false
+    },
+    "ANTI_SPAMBOT": {
+      "description": "Qoşulduqdan sonra qruplardan spambotlar atır. [Başlamaq üçün admin imtiyazları tələb olunur]",
+      "value": "False"
+    },
+    "ANTI_SPAMBOT_SHOUT": {
+      "description": "Başlamaq üçün admin imtiyazlarınız yoxdursa, qrupa qoşulduqdan sonra spam botları adminlərə bildirin.",
+      "value": "False"
+    },
+    "TMP_DOWNLOAD_DIRECTORY": {
+      "description": "Bir çox modul üçün yükləmə yeri (GDrive, .download v.s..)",
+      "value": "./downloads/"
+    },
+    "CLEAN_WELCOME": {
+      "description": "Yeni bir adam qoşulduqda, köhnə salamlama mesajı silinir.",
+      "value": "True"
+    },
+    "G_DRIVE_CLIENT_ID": {
+      "description": "Google Disk üçün müştəri idini daxil edin.",
+      "required": false
+    },
+    "LASTFM_API": {
+      "description": "Last.FM modulu üçün API Açarı. [Buradan birini götür - https://www.last.fm/api/account/create]",
+      "required": false
+    },
+    "LASTFM_SECRET": {
+      "description": "Last.FM modulu üçün GİZLİ Açar. [Buradan birini götür - https://www.last.fm/api/account/create]",
+      "required": false
+    },
+    "LASTFM_USERNAME": {
+      "description": "Last.FM istifadəçi adı",
+      "required": false
+    },
+    "LASTFM_PASSWORD": {
+      "description": "Last.FM Şifrəsi",
+      "required": false
+    },
+    "BIO_PREFIX": {
+      "description": "Last.FM Modulu Bioqrafiyası üçün ön söz.",
+      "required": false
+    },
+    "DEFAULT_BIO": {
+      "description": "Varsayılan profil biyografisi.",
+      "value": "@BrendUserBot",
+      "required": false
+    },
+    "G_DRIVE_CLIENT_SECRET": {
+      "description": "Google Disk üçün müştəri secreti daxil edin.",
+      "required": false
+    },
+    "G_DRIVE_AUTH_TOKEN_DATA": {
+      "description": "Google Disk doğrulama məlumatlarını JSON quruluşu olaraq daxil edin.",
+      "required": false
+    },
+    "LYDIA_API_KEY": {
+      "description": "Bu modulun işləməsi üçün CoffeeHouse API lazımdır. 'https://coffeehouse.intellivoid.info/dashboard' Buradan əldə edə bilərsiniz.",
+      "required": false
+    },
+    "WEATHER_DEFCITY": {
+      "description": "UserBot hava modulu üçün standart şəhəri seçin.",
+      "required": false
+    },
+    "LOGSPAMMER": {
+      "description": "Faylın cari söhbətə göndərilməsi əvəzinə səhv botlogların UserBot günlük qrupunda saxlanılmasını istəyirsinizsə bu dəyəri True olaraq təyin edin. Müvafiq bir BOTLOG_CHATID dəyərinin təyin edilməsi tələb olunur.",
+      "value": "False"
+    },
+    "WARN_LIMIT": {
+      "description": "Şəxs haqqında fikir bildirmək/reklam etmək üçün tələb olunan xəbərdarlıqların sayı. Ümumiyyətlə 3 istifadə olunur.",
+      "value": "3",
+      "required": false
+    },
+    "WARN_MODE": {
+      "description": "3 xəbərdarlıqdan sonra baş verəcək hadisə. Yalnız gmute və ya gban yaza bilərsiniz. Əks təqdirdə, bot işləməyə bilər.",
+      "value": "gmute",
+      "required": false
+    },
+    "GALERI_SURE": {
+      "description": "Bu qalereya pluginidir. Profil şəkilləri neçə saniyə dəyişməlidir?",
+      "value": "60",
+      "required": false
+    },
+    "PAKET_ISMI": {
+      "description": "Dızla əmri paket adı.",
+      "value": "@BrendUserBot Paketi",
+      "required": false
+    },
+    "OTOMATIK_KATILMA": {
+      "description": "#TOXUNMA.",
+      "value": "True",
+      "required": true
+    },
+    "LANGUAGE": {
+      "description": "Botun dili. EN/TR/AZ yazabilərsiniz.",
+      "value": "AZ",
+      "required": true
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql"
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  },{
+    "url": "heroku-community/apt"
+    }]
+}
