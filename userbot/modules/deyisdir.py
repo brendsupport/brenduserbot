@@ -6,7 +6,7 @@ from userbot.main import PLUGIN_MESAJLAR, ORJ_PLUGIN_MESAJLAR, PLUGIN_CHANNEL_ID
 from userbot.cmdhelp import CmdHelp
 
 from userbot.language import get_value
-LANG = get_value("dəyişdir")
+LANG = get_value("deyisdir")
 
 @register(outgoing=True, pattern="^.editl[eə] ?(.*)")
 @register(outgoing=True, pattern="^.d[eə]yi[sş]dir ?(.*)")
