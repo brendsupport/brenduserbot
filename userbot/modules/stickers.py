@@ -13,9 +13,9 @@ from userbot.main import PLUGIN_MESAJLAR
 from telethon import events
 from userbot.cmdhelp import CmdHelp
 
-PACK_FULL = "Vay! Yəqin ki, bir paket üçün kifayət qədər stiker var, ara verin. \
-Bu anda bir paketdə 120-dən çox etiket ola bilməz."
-PACK_DOESNT_EXIST = "  A <strong>Telegram</strong> istifadəçi yaratdı <strong>Sticker&nbsp;Set</strong>."
+PACK_FULL = "Whoa! That's probably enough stickers for one pack, give it a break. \
+A pack can't have more than 120 stickers at the moment."
+PACK_DOESNT_EXIST = " A <strong>Telegram</strong> user has created the <strong>Sticker&nbsp;Set</strong>."
 
 # ██████ LANGUAGE CONSTANTS ██████ #
 
