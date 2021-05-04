@@ -59,11 +59,11 @@ async def degistir(event):
             await event.edit(LANG['NOT_FOUND'] + ":`afk/alive/pm/kickme/dızcı/ban/mute/approve/disapprove/block`")
 
 CmdHelp('degistir').add_command(
-    'değiştir', '<modül> <mesaj/yanıt>', 'Değiştir, bottaki plugin-mesajlarını değiştirmenize yarar. Eğer mesaj yazmazsanız Plugin mesajını orijinal haline döndürür.', '.değiştir afk \"Şu an burda değilim... Belki hiç gelmem\"'
+    'deyistir və ya dəyişdir', '<modul> <mesaj və ya cavab>', 'Dəyişdir əmri, botdakı plugin mesajlarını dəyirşdirmənizə yarayır. Əgər mesaj yazmasanız Plugin mesajını orijinal vəziyyətinə qaytarar.'
 ).add_info(
-    '**Desteklenen Pluginler:** `afk/alive/pm/kickme/dızcı/ban/mute/approve/disapprove/block`\n**Alive Değişkenleri:** `{plugin}, {telethon}, {brend}, {python}`\n\
-**Ban/Mute Değişkenleri:** `{id}, {username}, {first_name}, {last_name}, {mention}, {date}, {count}`\n\
-**AFK Değişkenleri:** `{username}, {mention}, {first_name}, {last_name}, {last_seen_seconds}, {last_seen}, {last_seen_long}`\n\
-**PMpermit Değişkenler(pm, block, approve, disapprove):** `{id}, {username}, {mention}, {first_name}, {last_name}`\
-**Kickme Değişkenleri:** `{title}`'
+    '**Dəyişəbilən Pluginlər:** `afk/alive/pm/kickme/dızcı/ban/mute/approve/disapprove/block`\n**Alive Dəyişənləri:** `{plugin}, {telethon}, {brend}, {python}`\n\
+**Ban/Mute Dəyişənləri:** `{id}, {username}, {first_name}, {last_name}, {mention}, {date}, {count}`\n\
+**AFK Dəyişənləri:** `{username}, {mention}, {first_name}, {last_name}, {last_seen_seconds}, {last_seen}, {last_seen_long}`\n\
+**PMpermit Dəyişkənləri(pm, block, approve, disapprove):** `{id}, {username}, {mention}, {first_name}, {last_name}`\n\
+**Kickme Dəyişəni:** `{istədiyiniz mətn}`'
 ).add()
