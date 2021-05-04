@@ -10,7 +10,7 @@ from userbot.language import get_value
 LANG = get_value("cevir")
 
 @register(outgoing=True, pattern="^.çevir ?(foto|ses|gif|mp3)? ?(.*)")
-@register(outgoing=True, pattern="^.d[eə]yi[sş] ?(gif|səs|şəkil|mp3)? ?(.*)")
+@register(outgoing=True, pattern="^.donder ?(gif|səs|şəkil|mp3)? ?(.*)")
 async def cevir(event):
     islem = event.pattern_match.group(1)
     try:
