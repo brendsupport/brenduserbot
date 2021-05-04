@@ -15,7 +15,7 @@ from userbot.cmdhelp import CmdHelp
 
 PACK_FULL = "Whoa! That's probably enough stickers for one pack, give it a break. \
 A pack can't have more than 120 stickers at the moment."
-PACK_DOESNT_EXIST = " A <strong>Telegram</strong> user has created the <strong>Sticker&nbsp;Set</strong>."
+PACK_DOESNT_EXIST = "  A <strong>Telegram</strong> user has created the <strong>Sticker&nbsp;Set</strong>."
 
 # ██████ LANGUAGE CONSTANTS ██████ #
 
@@ -137,7 +137,7 @@ async def kang(event):
                 await conv.send_file(sticker, force_document=True)
             kontrol = await conv.get_response()
         
-            if "Üzr istəyirik, şəkil ölçüləri etibarsızdır." in kontrol.text:
+            if "Sorry, the image dimensions are invalid" in kontrol.text:
                 await event.edit("`Etiket imtina etdi. İkinci metodu sınamaq...`")
                 try:
                     await bot.send_file("@ezstickerbot", message, force_document=True)
@@ -146,7 +146,7 @@ async def kang(event):
 
                 try:
                     response = await conv.wait_event(events.NewMessage(incoming=True,from_users=350549033))
-                    if "Xahiş edirəm müvəqqəti istifadə edin" in response.text:
+                    if "Please temporarily use" in response.text:
                         await bot.send_file("@EzStickerBotBackupBot", message, force_document=True)
                         response = await conv.wait_event(events.NewMessage(incoming=True,from_users=891811251))
                 
