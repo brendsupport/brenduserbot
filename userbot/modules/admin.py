@@ -404,15 +404,15 @@ async def ban(bon):
 @register(outgoing=True, pattern="^.unban(?: |$)(.*)")
 async def nothanos(unbon):
 
-    chat = await unban.get_chat()
+    chat = await unbon.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        await unban.edit(NO_ADMIN)
+        await unbon.edit(NO_ADMIN)
         return
 
-    await unban.edit(LANG['UNBANNING'])
+    await unbon.edit(LANG['UNBANNING'])
 
     user = await get_user_from_event(unbon)
     user = user[0]
@@ -422,16 +422,16 @@ async def nothanos(unbon):
         return
 
     try:
-        await unban.client(
-            EditBannedRequest(unban.chat_id, user.id, UNBAN_RIGHTS))
-        await unban.edit(LANG['UNBANNED'].format(
+        await unbon.client(
+            EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
+        await unbon.edit(LANG['UNBANNED'].format(
             id = user.id,
             username = '@' + user.username if user.username else f"[{user.first_name}](tg://user?id={user.id})",
             first_name = user.first_name,
             last_name = '' if not user.last_name else user.last_name,
             mention = f"[{user.first_name}](tg://user?id={user.id})",
             date = datetime.datetime.strftime(datetime.datetime.now(), '%c'),
-            count = (chat.participants_count) if chat.participants_count else 'Bilinmiyor'
+            count = (chat.participants_count) if chat.participants_count else 'Bilinmir'
         ))
 
         if BOTLOG:
