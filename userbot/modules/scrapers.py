@@ -44,7 +44,7 @@ from telethon import events
 ##
 CARBONLANG = "auto"
 TTS_LANG = "tr"
-TRT_LANG = "tr"
+TRT_LANG = "az"
 LAN = {"Diller":
       [{"Türkçe":"tr",
        "İngilizce" : "en"}]}
