@@ -191,18 +191,18 @@ async def _(dyno):
     key = (requests.post("https://nekobin.com/api/documents",
                          json={"content": data}) .json() .get("result") .get("key"))
     url = f"https://nekobin.com/raw/{key}"
-    await dyno.edit(f"`Heroku loq'u :`\n\n: [S  P  A  C  E]({url})")
+    await dyno.edit(f"`Heroku loq'u :`\n\n: [B R E N D ⚡]({url})")
     return os.remove("logs.txt")
 
 
 CmdHelp('heroku').add_command(
 'dyno', None, 'Dyno saatı haqqında məlumat verir..'
     ).add_command(
-        'set var', None, 'set var <Yeni Var adı> <Dəyər> Botunuza yeni ConfigVar elave edir.'
+        'set var', None, 'set var <Yeni Var adı> <Dəyər> Botunuza yeni ConfigVar əlavə edir.'
     ).add_command(
-        'get var', None, 'Mövcud VARlarınızı əldə edin, yalnız botlog gurupunuzda istifadə edin.'
+        'get var', None, 'Mövcud VARlarınızı əldə edin, yalnız botlog qrupunuzda istifadə edin.'
     ).add_command(
         'del var', None, 'del var <Var adı> Seçdiyiniz ConfigVarı silər sildikdən sonra botunuza .restart atın.'
     ).add_command(
-        'log', None, 'Heroku logunuza baxin'
+        'log', None, 'Heroku logunuza baxın'
     ).add()
