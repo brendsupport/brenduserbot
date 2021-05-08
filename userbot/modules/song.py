@@ -14,6 +14,73 @@ from userbot.cmdhelp import CmdHelp
 from userbot.language import get_value
 LANG = get_value("song")
 
+
+# Originally from Bothub
+# Port to UserBot by @heyworld
+#Copyright (C) 2020 azrim.
+#imported .song and .vsong form catuserbot
+
+from telethon import events
+import asyncio
+import glob
+import shutil
+from userbot.events import register
+from userbot import bot, CMD_HELP, GOOGLE_CHROME_BIN, TEMP_DOWNLOAD_DIRECTORY, bot
+from telethon.errors.rpcerrorlist import YouBlockedUserError
+import os
+import subprocess
+import time
+from asyncio.exceptions import TimeoutError
+from hachoir.metadata import extractMetadata
+from hachoir.parser import createParser
+from pylast import User
+from selenium import webdriver
+from telethon import events
+from telethon.errors.rpcerrorlist import YouBlockedUserError
+from telethon.tl.types import DocumentAttributeAudio, DocumentAttributeVideo
+from userbot.utils import progress
+import pybase64
+
+async def brendmusic(cat, QUALITY, hello):
+    search = cat
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("--ignore-certificate-errors")
+    chrome_options.add_argument("--test-type")
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.binary_location = GOOGLE_CHROME_BIN
+    driver = webdriver.Chrome(chrome_options=chrome_options)
+    driver.get("https://www.youtube.com/results?search_query=" + search)
+    user_data = driver.find_elements_by_xpath('//*[@id="video-title"]')
+    for i in user_data:
+        video_link = i.get_attribute("href")
+        break
+    if not os.path.isdir("./temp/"):
+        os.makedirs("./temp/")
+    if not video_link:
+        await hello.edit(f"Bağışlayın. `{search}` mahnısını tapa bilmirəm ")
+        return
+    try:
+        command = (
+            'youtube-dl -o "./temp/%(title)s.%(ext)s" --extract-audio --audio-format mp3 --audio-quality '
+            + QUALITY
+            + " "
+            + video_link
+        )
+        os.system(command)
+    except Exception as e:
+        return await hello.edit(f"`Xəta:\n {e}`")
+    try:
+        thumb = (
+            'youtube-dl -o "./temp/%(title)s.%(ext)s" --write-thumbnail --skip-download '
+            + video_link
+        )
+        os.system(thumb)
+    except Exception as e:
+        return await hello.edit(f"`Xəta:\n {e}`")
+
+
 @register(outgoing=True, pattern="^.deez(\d*|)(?: |$)(.*)")
 async def deezl(event):
     if event.fwd_from:
