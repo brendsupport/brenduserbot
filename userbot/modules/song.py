@@ -11,12 +11,8 @@ import glob
 from random import randint
 from userbot.cmdhelp import CmdHelp
 
-# ██████ LANGUAGE CONSTANTS ██████ #
-
 from userbot.language import get_value
 LANG = get_value("song")
-
-# ████████████████████████████████ #
 
 @register(outgoing=True, pattern="^.deez(\d*|)(?: |$)(.*)")
 async def deezl(event):
@@ -61,6 +57,51 @@ async def deezl(event):
             await event.delete()
 
 @register(outgoing=True, pattern="^.song(?: |$)(.*)")
+async def _(event):
+    reply_to_id = event.message.id
+    if event.reply_to_msg_id:
+        reply_to_id = event.reply_to_msg_id
+    reply = await event.get_reply_message()
+    if event.pattern_match.group(1):
+        query = event.pattern_match.group(1)
+    elif reply:
+        if reply.message:
+            query = reply.messag
+    else:
+        event = await event.edit("`Nə tapmalıyam? `")
+        return
+    event = await event.edit("`wi8..! I am finding your song....`")
+    await catmusic(str(query), "128k", event)
+    l = glob.glob("./temp/*.mp3")
+    if l:
+        await event.edit("Mahnını tapdım yükləyirəm...📥")
+    else:
+        await event.edit(f"Bağışlayın ..! `{query}` ilə bir şey tapa bilmirəm")
+        return
+    thumbcat = glob.glob("./temp/*.jpg") + glob.glob("./temp/*.webp")
+    if thumbcat:
+        catthumb = thumbcat[0]
+    else:
+        catthumb = None
+    loa = l[0]
+    await bot.send_file(
+        event.chat_id,
+        loa,
+        force_document=False,
+        allow_cache=False,
+        caption=query,
+        thumb=catthumb,
+        supports_streaming=True,
+        reply_to=reply_to_id,
+    )
+    await event.delete()
+    os.system("rm -rf ./temp/*.mp3")
+    os.system("rm -rf ./temp/*.jpg")
+    os.system("rm -rf ./temp/*.webp")
+
+
+
+@register(outgoing=True, pattern="^.songu(?: |$)(.*)")
 async def port_song(event):
     if event.fwd_from:
         return
