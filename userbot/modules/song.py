@@ -70,7 +70,7 @@ async def _(event):
     else:
         event = await event.edit("`Nə tapmalıyam? `")
         return
-    event = await event.edit("`wi8..! I am finding your song....`")
+    event = await event.edit("`Hey...! Sənin mahnını tapıram....`")
     await catmusic(str(query), "128k", event)
     l = glob.glob("./temp/*.mp3")
     if l:
