@@ -59,10 +59,10 @@ async def pins(event):
         if (not type(Pattern) == list) or (len(Pattern) < 1 or len(Pattern[0]) < 1):
             if re.search(r'CmdHelp\(.*\)', fayll):
                 fayladi = reply_message.file.name.replace('.py', '')
-                extractCommands(dosya)
+                extractCommands(fayl)
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", fayll)[0]
                 await reply_message.forward_to(PLUGIN_ID)
-                return await event.edit(f'**📂 {fayladi} Modulu Yükləndi!**\n⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗\n**ℹ️ Info:** `.brend {cmdhelp}`')
+                return await event.edit(f'**📂 {fayladi} Modulu Yükləndi!**\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n**ℹ️ Info:** `.brend {cmdhelp}`')
             else:
                 await reply_message.forward_to(PLUGIN_ID)
                 userbot.cmdhelp.CmdHelp(fayl).add_warning('❌Əmr Tapılmadı!').add()
@@ -73,12 +73,12 @@ async def pins(event):
                 extractCommands(fayl)
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", fayll)[0]
                 await reply_message.forward_to(PLUGIN_ID)
-                return await event.edit(f'**📂 {fayladi} Modulu Yükləndi!**\n⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗\n**ℹ️ Info:** `.brend {cmdhelp}`')
+                return await event.edit(f'**📂 {fayladi} Modulu Yükləndi!**\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n**ℹ️ Info:** `.brend {cmdhelp}`')
             else:
                 fayladi = reply_message.file.name.replace('.py', '')
-                extractCommands(dosya)
+                extractCommands(fayl)
                 await reply_message.forward_to(PLUGIN_ID)
-                return await event.edit(f'**📂 {fayladi} Modulu Yükləndi!**\n⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗\n**ℹ️ Info:** `.brend {fayladi}`')
+                return await event.edit(f'**📂 {fayladi} Modulu Yükləndi!**\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n**ℹ️ Info:** `.brend {fayladi}`')
 
 @register(outgoing=True, pattern="^.premove ?(.*)")
 async def premove(event):
@@ -135,4 +135,4 @@ async def ptest(event):
         await event.edit(f"{LANG['PLUGIN_BUGGED']} {e}`")
         return os.remove("./userbot/temp_plugins/" + fayl)
     fayladi = reply_message.file.name.replace('.py', '')
-    return await event.edit(f'**☑️ {fayladi} Plugin Test Üçün Yükləndi!**\n⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗⋖⋗\n🆘 Userbotu yenidən başlatdığınızda modul silinmiş olacaq.')
+    return await event.edit(f'**☑️ {fayladi} Plugin Test Üçün Yükləndi!**\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n🆘 Userbotu yenidən başlatdığınızda modul silinmiş olacaq.')
