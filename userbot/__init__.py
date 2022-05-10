@@ -59,7 +59,7 @@ CMD_HELP_BOT = {}
 LANGUAGE = os.environ.get("LANGUAGE", "DEFAULT").upper()
 if not LANGUAGE in ["AZ"]:
     LOGS.info("Naməlum bir dil yazdınız. Buna görə DEFAULT istifadə olunur.")
-    LANGUAGE = "DEFAULT"
+    LANGUAGE = "AZ"
 
 WHITELIST = get('https://gitlab.com/brenduserbot/brend-userbot/-/raw/master/whitelist.json').json()
 SUPPORT = get('https://gitlab.com/brenduserbot/brend-userbot/-/raw/master/support.json').json()
