@@ -1,0 +1,100 @@
+{
+  "name": "Brend UserBot",
+  "description": "Brend UserBot",
+  "logo": "https://telegra.ph/file/7e28bcc4d986fb2099150.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "Brend",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/brendsupport/brenduserbot",
+  "website":   "https://github.com/brendsupport/brenduserbot",
+  "success_url": "https://github.com/brendsupport/brenduserbot",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "Bu məlumatı my.telegram.org saytından alın.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Bu məlumatı my.telegram.org saytından alın.",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "python3 GenerateStringSession.py faylını işlədərək bu məlumatı alın.",
+      "required": true
+    },
+    "HEROKU_MEMEZ": {
+      "description": "UserBot bir Heroku dyno ilə işləyirsə, bu məlumat True olmalıdır.",
+      "value": "True",
+      "required": true
+    },
+    "HEROKU_APIKEY": {
+      "description": "Heroku API Key, 'https://dashboard.heroku.com/account' adresindən alın.",
+      "value": ""
+    },
+    "HEROKU_APPNAME": {
+      "description": "Heroku proqram adını buraya əlavə edin. UserBot yenilənmələrində lazım olur.",
+      "required": true
+    },
+    "BOTLOG": {
+      "description": "Botlog -a hesabat göndərmək aktivləşdirilməsi",
+      "value": "False"
+    },
+    "BOT_TOKEN": {
+      "description": "İnline bot xüsusiyyətinin işləməsi üçün tələb olunur. Budur bot token yazmalısan. Bir botunuz yoxdursa, @BotFather köməyi ilə bir bot yarada bilərsiniz.",
+      "required": false    
+    },
+    "BOTLOG_CHATID": {
+      "description": "BotLOg qrupunun ChatID. BOTLOG = False /və ya LOGSPAMMER=False olduqda onu '0' olaraq təyin edin.",
+      "value": "0"
+    },
+    "CONSOLE_LOGGER_VERBOSE": {
+      "description": "Konsol jurnalında detallara ehtiyacınız varsa, bunu True olaraq ayarlayın.",
+      "value": "False"
+    },
+    "PM_AUTO_BAN": {
+      "description": "PM Avtomatik Qadağa Xüsusiyyəti. 'Hey! Bu bir bot.' modul.",
+      "value": "False"
+    },
+    "PM_AUTO_BAN_LIMIT": {
+      "description": "PM Auto Ban limiti. İstifadəçi sizə x mesaj göndərirsə bloklanacaq.",
+      "value": "4",
+      "required": false
+    },
+    "CLEAN_WELCOME": {
+      "description": "Yeni bir adam qoşulduqda, köhnə salamlama mesajı silinir.",
+      "value": "True"
+    },
+    "LOGSPAMMER": {
+      "description": "Faylın cari söhbətə göndərilməsi əvəzinə səhv botlogların UserBot günlük qrupunda saxlanılmasını istəyirsinizsə bu dəyəri True olaraq təyin edin. Müvafiq bir BOTLOG_CHATID dəyərinin təyin edilməsi tələb olunur.",
+      "value": "False"
+    },
+    "WARN_LIMIT": {
+      "description": "Şəxs haqqında fikir bildirmək/reklam etmək üçün tələb olunan xəbərdarlıqların sayı. Ümumiyyətlə 3 istifadə olunur.",
+      "value": "3",
+      "required": false
+    },
+    "WARN_MODE": {
+      "description": "3 xəbərdarlıqdan sonra baş verəcək hadisə. Yalnız gmute və ya gban yaza bilərsiniz. Əks təqdirdə, bot işləməyə bilər.",
+      "value": "gmute",
+      "required": false
+    },
+    "LANGUAGE": {
+      "description": "Botun dili. AZ/TR yazabilərsiniz.",
+      "value": "AZ",
+      "required": true
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql"
+  }],
+  "buildpacks": [{
+    "url": "heroku/python"
+  },{
+    "url": "heroku-community/apt"
+    }]
+}

@@ -1,0 +1,303 @@
+{
+    "__BRENDJSON__": true,
+    "LANGUAGE": "Indonesia",
+    "LANGCODE": "ID",
+    "AUTHOR": "t.me/BrendOwner",
+    "STRINGS": {
+        "__plugin": { "REPLY_FOR_PORT": "` Harap tulis balasan ke file untuk Port-Plugin` ", 
+        "DOWNLOADING": "` File Diunggah ... `", 
+        "UNIBORG": "` 1. Ketik UniBorg ditemukan ... `", 
+        "TOO_MANY_PLUGIN": "` File ini berisi lebih dari satu plugin, saya tidak dapat mem-portnya!",
+        "UPLOADING": "` Port sedang memuat file dengan benar ... `", 
+        "UNIBORG2": "` 2. Ketik UniBorg ditemukan ... `", 
+        "UNIBORG3": "` 3. Ketik UniBorg ditemukan ... `", 
+        "UNIBORG_NOT_FOUND": "` Plugin UniBorg tidak terdeteksi.` ",
+        "PLIST_CHECKING": "🔎`Daftar plugin dibawa ...` ", 
+        "PLIST": "📃 ** Plugin yang Diunggah Saat Ini: ** ", 
+        "TEMP_PLUGIN": "` Plugin Anda tidak dimuat secara permanen, jadi saya tidak dapat menampilkan daftar.` ", 
+        "REPLY_TO_FILE": "😬`Tulis sebagai tanggapan terhadap file modul yang akan diunduh.`", 
+        "NOT_FOUND_PLUGIN_CHANNEL": "` Anda tidak menyetel Id untuk menjadikan plugin permanen. Plugin Anda dapat dihapus saat dimulai ulang! `", 
+        "PLUGIN_BUGGED": "❌`Plugin Not Downloaded!` \ n⛔ ** Ditemukan kesalahan pada plugin. ** ⛔ \ n💢` Kesalahan: `", 
+        "PLUGIN_DESC": "Plugin ini telah diunduh untuk bot Anda dari tepi. Penggunaan:", 
+        "PLUGIN_DOWNLOADED": "✅`Modul berhasil dimuat`📥 \ n➖➖➖➖➖➖➖➖➖➖➖ \ n📝Gunakan:% s", 
+        "PLUGIN_WITHOUT_DESC": "Plugin ini diunduh dari periferal. Penggunaan: # ORDER NOT FOUND #", 
+        "PLUGIN_DESCLESS": "` Modul berhasil dimuat! Tapi sayangnya saya tidak dapat menemukan perintahnya.` ", 
+        "PLUG_DESC": "Plugin ini diunduh dari periferal. Penggunaan:.", 
+        "PLUG_MESSAGE": "✅`Modul berhasil dimuat`📥 \ n➖➖➖➖➖➖➖➖➖➖➖ \ n📝Gunakan:`.% S` ", 
+        "PREMOVE_GIVE_NAME": "😬`Silakan tentukan plugin di sebelah perintah.`", 
+        "PREMOVE_DELETING": "🗳️`Plugin Dihapus ...` ", "ALREADY_DELETED": "🗑️`File plugin telah dihapus.`", 
+        "NOT_FOUND_PLUGIN": "` Mungkin ada plugin seperti itu, mungkin tidak. Tapi yang jelas sekarang tidak ada.` ", 
+        "PLUG_DELETED": "✅`Plugin berhasil dihapus`🗑️ \ n➖➖➖➖➖➖➖➖➖➖➖ \ n ️ ** Penting untuk memulai ulang untuk melanjutkan. **", 
+        "BREND_PLUGIN_CAPTION": "❇️Ini adalah plugin [Brand Userbot] (https://t.me/BrendUserBot)."
+    },
+
+    "__brend": { 
+        "NEED_PLUGIN": "ℹ️Tuliskan nama modul yang ingin Anda dapatkan informasinya \ n \ n💠Info: .brand <nama modul>", 
+        "NEED_MODULE": "😊Harap tunjukkan modul merek mana yang ingin Anda bantu !! \ n📝Gunakan: .brand <nama modul>"
+  }, 
+
+   "__helpme": { 
+       "NO_BOT": "❌`Bot tidak terdaftar! Masukkan Token Bot dan Nama Pengguna dengan benar. Modul ditangguhkan.`" 
+   }, 
+
+   "alives": { 
+       "ALIVE1": "` `⚡️ BrandUserbot aktif󠀁󠀁󠀁󠀁󠀁󠀁󠀁󠀁󠀁󠀁", 
+       "ALIVE2": "` `👑 Bosku ", 
+       "ALIVE3": "` `💠 Versi Python Anda", 
+       "ALIVE4": "` `🖥 Versi merek Anda", 
+       "ALIVE5": "` `📂 Nomor Plugin", 
+       "ALIVE6": "` `⚒ Jenis cabang: master", 
+       "ALIVE7": "__Brand Userbot berfungsi __", 
+       "ALIVE8": "` `💎 Versi Telethon", 
+       "ALIVE9": "** Aha Husu saya bekerja **" },
+
+   "afk": { 
+       "REASON": "Alasan", 
+       "AFK": "🤖Pemilik saya tidak ada di sini sekarang.", 
+       "IM_AFK": "🤖Saat ini AFK-yam.", 
+       "IM_NOT_AFK": "👤Pemilik saya kembali."
+   }, 
+
+   "auto": { 
+       "INVALID_TYPE": "Spesies tidak diketahui. Spesies yang ada:` name`, `bio`", 
+       "ALREADY": "` Saat ini% s sudah berubah secara otomatis.` ", 
+       "SETTING": "`% s diatur ... `", "BIO": "📅 Tanggal: {tanggal} | ️ Waktu: {jam} |", 
+       "NICK": "@BrendUserbot", "SETTED": "`% s disesuaikan :) `", 
+       "NAME": "⌈% s⌋" 
+   },
+  
+   "blacklist": { 
+       "FORBIDDEN_KUFUR": "** Saya tidak diizinkan menghapus pesan di grup ini. Filter sumpah tidak diaktifkan. **", 
+       "HAVENT_PERMISSION": "Saya tidak diizinkan menghapus pesan!", 
+       "USAGE_KUFUR": "` Penggunaan: .open / close blasphemy` ", 
+       "OPENED_KUFUR": "` Filter sumpah disetujui untuk grup ini! `", 
+       "CLOSED_KUFUR": "` Filter sumpah dihapus untuk grup ini! `", 
+       "ALREADY_CLOSED_KUFUR": "` Filter sumpah serapah untuk grup ini telah dihapus! `", 
+       "ADDED": "Jumlah kata telah dimasukkan dalam daftar hitam untuk grup ini." 
+       "BLACKLIST": "Daftar hitam untuk grup ini:", 
+       "NOT_FOUND": "** Tidak ada kata yang ditemukan dalam daftar hitam ... ** Anda dapat menambahkan dengan perintah` .addblacklist` **. ** ", 
+       "BLACKLIST_FILE": "Daftar Hitam untuk grup ini:", 
+       "REMOVED": "** Kata dihapus dari daftar hitam. **"
+   },
+   
+   "cevir": { 
+       "INVALID_COMMAND": "❌ ** Perintah tidak diketahui! ** \ n📝`Gunakan: .turn photo / sound / gif`", 
+       "NEED_REPLY": "Tolong balas Stiker." 
+       "CONVERTING_TO_PHOTO": "Mengonversi menjadi fotografer ...",
+       "NEED_EFECT": "` Harap perhatikan sebuah efek. Efek yang dapat digunakan: `` child / robot / earrape / fast / parasite / echo` ", 
+       "NEED_SOUND": "` Tolong jawab Suara.` ", 
+       "EFECTING": "` Efek sedang disiapkan ... `",
+       "NOT_FOUND_EFECT": "** Tidak ada efek yang ditemukan! **` Efek yang dapat Anda gunakan: `` child / robot / earrape / fast / parasite / echo` ", 
+       "NEED_VIDEO": "` Tolong jawab video! `", 
+       "WITH_BREND": "Efek dibuat dengan @BrandUserBot.`", 
+       "WITH_BREND_GIF": "@BrendUserBot telah dikonversi ke GIF.`", 
+       "CONVERTING_TO_GIF": "Mengonversi ke GIF ...", 
+       "UPLOADING_GIF": "` Gif sedang memuat ... `", 
+       "ERROR": "Saya tidak dapat mengonversi ke GIF: /" 
+    }, 
+   
+    "chat": {
+        "USERNAME": "👤Nama pengguna:", 
+        "ID": "🆔ID Pengguna:", 
+        "GROUP": "🆔ID Grup:", 
+        "NEED_LOG": "` Login harus terbuka untuk mengaktifkan fitur ini! `", 
+        "UNMUTED": "Obrolan telah dibuka", 
+        "MUTED": "` Obrolan diam!"
+    },
+
+    "admin": { 
+        "PP_TOO_SMOL": "` `` Gambar ini terlalu kecil. Harap gunakan gambar yang lebih besar``` ", 
+        "PP_ERROR": "` `` Terjadi kesalahan saat memproses gambar.``` ", 
+        "NO_ADMIN": "😕`Saya tidak memiliki izin admin!",
+        "NO_PERM": "Saya tidak memiliki otoritas yang diperlukan!",
+        "NO_SQL": "` Bekerja dalam mode non-SQL` ", 
+        "CHAT_PP_CHANGED": "` Gambar grup diubah` ", 
+        "CHAT_PP_ERROR": "` Beberapa kesalahan terjadi saat memperbarui gambar. \ NMungkin saya bukan administrator` \ n`atau atau saya tidak memiliki fitur yang diperlukan.`",
+        "INVALID_MEDIA": "` `` Media tidak dapat diandalkan.``` ", 
+        "PRIVATE": "Perintah ini tidak dapat digunakan dalam pesan pribadi!",
+        "EKLE": "` Berhasil ditambahkan` ", 
+        "BRAIN": "` Error! Saya tidak bisa melakukan ini pada Pemilik Merek. " 
+        "BANNING": "` Pengguna ditambahkan ke daftar hitam ...`", 
+        "ALREADY_GBANNED": "` Kesalahan! Pengguna telah dicekal di seluruh dunia.` ", 
+        "GBANNED_REASON": "` Pengguna dilarang di seluruh dunia! `\ N ** Alasan: **", 
+        "GBANNED": "Pengguna dilarang di seluruh dunia!",
+        "GBAN_TEXT": "` `` Anda adalah orang jahat! Saya tidak ingin Anda berada di sini lagi. Anda telah diblokir! `` ", 
+        "UNGBANNING": "` `` Larangan dicabut di seluruh dunia ... `` `", 
+        "NO_BANNED": "` Kesalahan! Mungkin tidak ada batasan pengguna.` ", 
+        "UNGBANNED": "` `Larangan pengguna dunia dicabut```", 
+        "PROMOTING": "` Diperbolehkan ... `", 
+        "SUCCESS_PROMOTE": "✅Izin manajemen berhasil diberikan!", 
+        "SUCCESS_PROPROMOTE": "💎Izin Manajemen Premium Berhasil Dikeluarkan!",
+        "UNPROMOTING": "` Izin dikurangi ...`", 
+        "UNPROMOTE": "` Izin berhasil diturunkan!",
+        "NO_PERM_BUT_BANNED": "` Saya tidak diizinkan menulis pesan! Tapi pengguna masih diblokir! `", 
+        "ALASAN": "Alasan",
+        "UNBANNING": "` Larangan dicabut ... `", 
+        "UNBANNED": "` `` Larangan berhasil dicabut``` ",
+        "EXCUSE_ME_WTF": "Saya pikir orang ini tidak cocok dengan logika saya melarang",
+        "NO_MUTE_ME": "` Maaf tapi saya tidak bisa mengutuk diri saya untuk diam ... \ n (ヘ _ ･) ` ", 
+        "MUTING": "` Ditambahkan ke mode senyap ... `", 
+        "ALREADY_MUTED": "` Kesalahan! Pengguna telah ditambahkan ke mode senyap.` ", 
+        "WTF_MUTE": "Orang ini tidak cocok dengan logika mode senyap saya", 
+        "UNMUTING": "` `` Dihapus dari mode senyap ... `` `", 
+        "ALREADY_UNMUTED": "` Kesalahan! Pengguna telah dihapus dari mode senyap.` ", 
+        "UNMUTED": "` Pengguna dapat berbicara lagi! `", 
+        "GUNMUTING": "` `` Keheningan dihapuskan di seluruh dunia ... `` `", 
+        "NO_GMUTE": "` Error! Mungkin tidak ada batasan untuk pengguna.` ", 
+        "GMUTING": "Keheningan dibungkam di seluruh dunia ...", 
+        "ALREADY_GMUTED": "` Kesalahan! Pengguna telah dibungkam di seluruh dunia.` ", 
+        "GMUTED": "Pengguna telah dibungkam di seluruh dunia!",
+        "NO_ZOMBIE": "` Akun yang dihapus tidak ditemukan, grup bersih! `",
+        "ZOMBIE": "` Dicari akun yang dihapus ... `", 
+        "ZOMBIES": "**` Jumlah akun yang dihapus ditemukan di grup ini` ** {} ** ',
+        "CLEANING": "` Akun yang dihapus akan dihapus ... `",
+        "NO_BAN_YT": "` Saya tidak memiliki larangan di grup ini! `", 
+        "DELETED": "Nomor akun yang dihapus dihapus dari grup", 
+        "ADMINS": "manajer grup", 
+        "NEED_MSG": "` Balas pesan apa pun untuk mengonfirmasi! `", 
+        "PINNED": "Berhasil Stabil!",
+        "NOT_FOUND": "` Pengguna tidak ditemukan.` ", 
+        "KICKING": "` Dihapus ... `", 
+        "KICKED": "Dikeluarkan dari grup!",
+        "UNWARNING": "` Peringatan dihapus ... `", 
+        "UNWARNED: "Orang ini belum pernah diperingatkan sebelumnya!",
+        "UNWARN: "Peringatan Anda telah dihapus, tetapi hati-hati lagi! Situasi baru:", 
+        "PERINGATAN": "` Peringatan dikirim ... `", 
+        "WARN": "kali diperingatkan; harap berhati-hati!" 
+    },
+   
+    "degistir": { 
+        "SETTED_MEDIA": "Media Anda telah didaftarkan.", 
+        "SETTED_REPLY": "Pesan Anda telah didaftarkan.", 
+        "SUCCESS_DELETED": "` Pesan plugin berhasil dihapus.` ", 
+        "ERROR_DELETED": "Pesan plugin tidak dapat dihapus. ** Kesalahan", 
+        "NOT_FOUND": "** Plugin tidak dikenal. ** Plugin tempat Anda dapat menghapus pesan", 
+        "USAGE": "** Ubah, sehingga Anda dapat mengubah pesan-plugin di bot. ** \ nContoh Penggunaan:` .change afk \ "Saya tidak di sini sekarang ... Mungkin saya tidak pernah datang \" ` \ nDelete the plugin-message:` .change afk` \ nPlug-messages you can change (current): `afk /live / pm / kickme / knee / ban / mute / approval / disapprove / block`", 
+        "CANNOT_EMPTY": "Pesan plugin tidak boleh kosong." "SETTED": "Pesan Anda (` {msj} `) telah dikonfirmasi untuk plugin (` {plu} `)." 
+    },
+   
+    "covid19": { 
+        "SOME_ERRORS": "` Terjadi kesalahan.` ", 
+        "DATA": "Informasi Virus Corona",
+        "EARTH": "Di dunia", "CASE": "🌎 Pasien:", 
+        "DEATH": "🌎 Kematian:", 
+        "HEAL": "🌎 Sembuh:",
+        "AZ": "Azerbaijan", 
+        "TR_ALL_CASES": "Pasien (umum):", 
+        "TR_CASES": "Pasien (hari ini):", 
+        "TR_CASE": "Pasien (aktif):", 
+        "TR_ALL_DEATHS": "Kematian (umum):", 
+        "TR_DEATHS": "Kematian (hari ini):", 
+        "TR_HEAL": "Dipulihkan:" 
+    },
+
+
+    "deepfry": { 
+        "CANT_DEEPFRY": "` Saya tidak bisa melakukan deepfry! `", 
+        "REPLY_PHOTO": "` Balas ke gambar atau ekstrak agar saya bisa Deepfry! `", 
+        "MEDIA_DOWNLOADING": "` Media sedang memuat ... `", 
+        "APPLYING_DEEPFRY": "` Media deepfry diterapkan ... `" 
+    },
+    "dogbin": { 
+        "ELON_SAYS": "` Elon Musk bilang saya tidak bisa merekatkan celah.` ",
+        "PASTING": "Tempel teks...", 
+        "PASTED": "Berhasil ditempel!",
+        "URL": "URL Singkatan:", 
+        "ORG_URL": "URL Asli (tidak disingkat)", 
+        "DOGBIN_URL": "URL Dogbin", 
+        "URL_BUT_ENG": "Berhasil ditempel!",
+        "DOGBIN_NOT_RESPOND": "Kami tidak dapat menjangkau Dogbine", 
+        "BOTLOG_SENDING": "Penempelan teks anjing berhasil diselesaikan", 
+        "DATA_CHECKING": "` Konten Dogbin diambil ... `", 
+        "UNSUPPORTED_URL": "Apakah ini alamat anjing?" 
+        "HTTP_ERROR": "Permintaan gagal mengembalikan kode status.",
+        "TIMEOUT": "Waktu yang diminta lebih lambat dari yang kami harapkan." 
+        "TOO_MANY_REDIRECTS": "Permintaan telah melewati pengalihan maksimum yang dikonfigurasi."
+        "DOGBIN_DATA": "` Konten URL Dogbin berhasil diimpor! `\ N \ n`Konten:` ", 
+        "DOGBIN_ENDED": "Transfer konten Dogbin berhasil diselesaikan" 
+    },
+
+    "durum": { 
+        "VERSI": "Versi", 
+        "PLUGIN_COUNT": "Nomor Plugin", 
+        "PERMAMENT": "Seumur Hidup", 
+        "PLUGIN": "Plugin", "Oke": "Semuanya Normal"
+    },
+
+    "evaluators": {
+        "FORBIDDEN_IN_CHANNEL": "` Perintah ini tidak diizinkan di saluran` ", 
+        "NEED_CODE": "` Buat pernyataan untuk dievaluasi.` ", 
+        "WARNING": "Ini adalah operasi berbahaya! Tidak dikonfirmasi!" 
+        "BIG_FILE": "` Output terlalu besar, dikirim sebagai file` ", 
+        "QUERY": "Pertanyaan", 
+        "RESULT": "Hasil", 
+        "EMPTY_RESULT": "Hasil tidak dapat dikembalikan/Salah",
+        "ERROR": "Pengecualian" 
+    },
+
+    "filter": { 
+        "GENEL_USAGE": "` Penggunaan: `` .globalfilter \ "hello aleykum \" aleykum hello` atau `.globalfilter hello aleykuma", 
+        "GENEL_FILTER": "filter",
+        "ADDED": "ditambahkan", 
+        "UPDATED": "diperbarui", 
+        "FILTER_USAGE": "` Penggunaan: `` .filter \ "halo aleykum \" as` atau `.filter sa as`", 
+        "NOT_FOUND": "filter tidak tersedia.",
+        "DELETED": "filter berhasil dihapus", 
+        "GENELFILTERS": "` Tidak ada filter global.` ", 
+        "GENEL_FILTERS": "Filter global:", 
+        "FILTER": "Tidak ada filter dalam obrolan ini.", 
+        "_FILTERS": "Filter obrolan:", 
+        "NEED_BOTLOG": "Nilai` BOTLOG_CHATID harus disetel sebelum media ditentukan sebagai respons terhadap filter.`" 
+    },
+
+    "gallery": {
+        "ADDED_LIST": "Gambar ditambahkan ke antrean.", 
+        "INVALID_URL": "Anda mengetik URL gambar yang salah. Jika Anda tidak tahu cara menggunakannya, tulis .brand gallery.",
+        "EXAMPLE" : "Silakan Masukkan alamat gambar. Contoh: .galeri tambahkan https://i.resimyukle.xyz/7Qbbc9.jpeg ",
+        "LIST": " Gambar yang Anda tambahkan ke antrian ",
+        "REMOVED":" Gambar selanjutnya berhasil dihapus ",
+        "REMOVE_ERROR":" Gambar berikutnya tidak terhapus Kesalahan ",
+        "NEED_NUMBER ":" Harap perhatikan urutan gambar. Contoh: ",
+        "WORKING":" Galeri sedang bekerja. ",
+        "STARTED":" Galeri berfungsi. ",
+        "NEED_PHOTO ":" Anda perlu menambahkan foto ke galeri. Jika Anda tidak tahu cara menambahkan, Anda dapat mempelajari cara menggunakannya dengan galeri .brand. ", 
+        "STOPPED": "Galeri berhenti!",
+        "ALREADY_STOP":" Galeri tidak berfungsi lagi. ",
+        "INVALID: "** Perintah Tidak Diketahui **\n\nTambahkan gambar ke galeri: .gale add https://i.resimyukle.xyz /7Qbbc9.jpeg\nLihat daftar galeri: .galeri list \nHapus gambar biasa: .gale hapus ri <nomor baris>"
+    },
+
+    "github": {
+        "INFO": "informasi GitHub pengguna", 
+        "NAME": "Nama", 
+        "COMPANY": "Perusahaan", 
+        "CREATED": "Tanggal pembuatan akun", 
+        "REPOS": "Repolar:",
+        "NOT_FOUND": "tidak ditemukan`" 
+    },
+
+    "lastfm": { 
+        "BIO_ENABLED": "Menambahkan musik yang diputar di` `` last.fm ke bio aktif.``` ",
+        "BIO_DISABLED": "Menambahkan musik yang diputar di` `` last.fm ke bio dinonaktifkan. Biografi telah disetel default.``` ", 
+        "BIO_RUNNING": "` `` Menambahkan musik yang diputar di Last.fm ke bio sedang aktif.``` ", 
+        "BIO_ERR": "` `` Opsi tidak ditampilkan.``` ", 
+        "LOG_ENABLED": "` `` record bot last.fm saat ini aktif.``` ", 
+        "LOG_DISABLED": "` `` entri bot last.fm dinonaktifkan.``` ", 
+        "LOG_ERR": "` `` Opsi tidak ditampilkan.``` ", 
+        "ERROR_MSG": "` `` modul last.fm dihentikan karena kesalahan tak terduga.``` "
+    },
+
+    "liste": { 
+        "WRONG_INPUT": "** Perintah tidak diketahui! **` Penggunaan: .liste gmute / gban` ", 
+        "NEED_SQL_MODE": "` Fitur ini tidak berfungsi dalam mode non-sql! `", 
+        "GBANNED_USERS": "` Pengguna yang dicekal secara global dibawa ... `", 
+        "TOO_MANY_GBANNED": "Wow! Wow! Anda telah mencekal banyak orang. Saya mengirimkannya sebagai file ...",
+        "GBAN_TXT": "** Pengguna yang telah Anda ban secara global ** \n\n ** Bantuan: ** Anda dapat menggunakan` .whois id` untuk mendapatkan informasi lebih lanjut tentang pengguna yang telah Anda ban. ",
+        "GBAN_LIST": "** Pengguna yang telah Anda ban secara global: ** \n% s \n\n ** Bantuan: ** Anda dapat menggunakan` .whois id` untuk mendapatkan informasi lebih lanjut tentang pengguna yang telah Anda ban. ",
+        "GMUTE_DATA": "` Pengguna senyap global dibawa ... `", 
+        "GMUTE_LIST_MESSAGE": "** ID: **`% s`\n ", 
+        "TOO_MANY_GMUTED": "Wow! Wow! Anda telah membungkam banyak orang. Saya mengirimkannya sebagai file ...",
+        "GMUTE_LIST": "** Pengguna yang telah Anda nonaktifkan secara global: ** \n% s \n\n ** Bantuan: ** Anda dapat menggunakan` .whois id` untuk mendapatkan informasi lebih lanjut tentang pengguna yang telah Anda nonaktifkan. ", 
+        "GMUTE_TXT": "** Pengguna yang telah Anda nonaktifkan secara global ** \n\n ** Bantuan: ** Anda dapat menggunakan` .whois id` untuk mendapatkan informasi lebih lanjut tentang pengguna yang telah Anda nonaktifkan. "
+    },
+    
+     
