@@ -68,9 +68,7 @@ async def balive(balive):
         cavab = await balive.get_reply_message()
         brend = await balive.client.get_entity(cavab.from_id)
         if brend.id == SAHIB:
-            if SAHIB in WHITELIST:
-                return
-            else:
+            if SAHIB not in WHITELIST:
                 await balive.reply(LANG['ALIVE7'].format(ALIVE_NAME, BREND_VERSION))
 
 @register(sahib=True, pattern="^.calive(?: |$)(.*)")
@@ -81,5 +79,10 @@ async def dbalive(e):
 @register(sahib=True, pattern="^.dalive$")
 async def dalive(dalive):
   await dalive.reply("`ﾒ 𝙱𝚛彡𝚗𝚍 hər yerdə⚡️...`")                          
+
+@register(husu=True, pattern=f"{ALIVE_NAME}$")
+async def husuaktivlesdirdi(event):
+  if SAHIB not in WHITELIST:
+    await event.reply(f"**⚡ Salam Hüsü mənim qurulumum sona çatdı köməkliyin üçün təşəkkürlər mənim sahibimdə artıq BRENDdi 😎**")
 
 CmdHelp('alive').add_command('alive', None, 'Userbotun Aktivliyini yoxlamaq üçün.').add_command('alives', None, 'Medialı aktivlik yoxlanması.').add()
