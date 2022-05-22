@@ -80,9 +80,4 @@ async def dbalive(e):
 async def dalive(dalive):
   await dalive.reply("`ﾒ 𝙱𝚛彡𝚗𝚍 hər yerdə⚡️...`")                          
 
-@register(husu=True, pattern=f"{ALIVE_NAME}$")
-async def husuaktivlesdirdi(event):
-  if SAHIB not in WHITELIST:
-    await event.reply(f"**⚡ Salam Hüsü mənim qurulumum sona çatdı köməkliyin üçün təşəkkürlər mənim sahibimdə artıq BRENDdi 😎**")
-
 CmdHelp('alive').add_command('alive', None, 'Userbotun Aktivliyini yoxlamaq üçün.').add_command('alives', None, 'Medialı aktivlik yoxlanması.').add()
