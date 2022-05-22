@@ -1,5 +1,6 @@
 import asyncio, sys, heroku3
 from random import randint
+from telethon.tl.functions.channels import CreateChannelRequest
 from telethon.tl.functions.contacts import UnblockRequest
 from userbot import BOT_TOKEN, HEROKU_APIKEY, HEROKU_APPNAME, bot, me as b
 
@@ -10,6 +11,18 @@ if HEROKU_APPNAME is not None and HEROKU_APIKEY is not None:
     heroku_var = app.config()
 else:
     app = None
+
+async def autopilot():
+    desc = "⚡ Brend Userbot Botlog."
+    try:
+        qrup = await bot(CreateChannelRequest(title="Log UserBot", about=desc, megagroup=True))
+        qrup_id = qrup.chats[0].id
+    except Exception as e:
+        LOGS.error(str(e))
+    if not str(qrup_id).startswith("-100"):
+        qrup_id = int(f"-100{str(qrup_id)}")
+    heroku_var["BOTLOG"] = "True"
+    heroku_var["BOTLOG_CHATID"] = qrup_id
 
 async def brendautobot():
     if BOT_TOKEN:
