@@ -31,7 +31,7 @@ BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
 # LOG Group
-BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", 0))
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID") or 0)
 BOTLOG = sb(os.environ.get("BOTLOG", "False"))
 LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 
