@@ -3,7 +3,7 @@ from importlib import import_module
 from sqlite3 import connect
 from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_ID, BREND_VERSION, BOT_TOKEN
+from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_ID, BREND_VERSION, BOT_TOKEN, BOTLOG_CHATID
 from .modules import ALL_MODULES
 import userbot.modules.sql_helper.mesaj_sql as MSJ_SQL
 from random import choice
