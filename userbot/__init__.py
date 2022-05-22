@@ -24,8 +24,8 @@ if version_info[0] < 3 or version_info[1] < 8:
     quit(1)
     
 BREND_VERSION = "v5"
-API_ID = os.environ.get("API_KEY", None)
-API_HASH = os.environ.get("API_HASH", None)
+API_ID = int(os.environ.get("API_KEY", "1558926"))
+API_HASH = os.environ.get("API_HASH", "69c4c16e17e9f637818f2cfce8f9bce5")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
