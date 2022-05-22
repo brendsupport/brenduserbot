@@ -15,7 +15,7 @@ else:
 async def autopilot():
     desc = "⚡ Brend Userbot Botlog."
     try:
-        qrup = await bot(CreateChannelRequest(title="Log UserBot", about=desc, megagroup=True))
+        qrup = await bot(CreateChannelRequest(title="⚡ Brend Botlog", about=desc, megagroup=True))
         qrup_id = qrup.chats[0].id
     except Exception as e:
         LOGS.error(str(e))
