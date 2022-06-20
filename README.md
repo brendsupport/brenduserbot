@@ -3,7 +3,7 @@
   <h1>Brend Userbot</h1>
 </div>
 <p align="center">
-    Brend 𝑈𝑠𝑒𝑟𝐵𝑜𝑡, 𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚ı daha asand və funskiyarı ilə sizin xidmətinizdədir.Userbot tamamı ilə pulsuzdur. <br>
+    Brend 𝑈𝑠𝑒𝑟𝐵𝑜𝑡, 𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚ı daha sadə və funksional hala gətirmək üçün sizin xidmətinizdədir. Userbotun qurulumu tamamı ilə pulsuzdur. <br>
     <br>
         <a href="https://github.com/brendsupport/brenduserbot/blob/master/README.md#Qurulum"> Qurulum</a> |
         <a href="https://t.me/BrendUserbot">Telegram </a> |
