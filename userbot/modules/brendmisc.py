@@ -77,7 +77,7 @@ async def mahnidanmesaja(event):
     rep_msg = None
     if event.is_reply:
         rep_msg = await event.get_reply_message()
-    if len(sarki) < 1:
+    if len(mahni) < 1:
         if event.is_reply:
             mahni = rep_msg.text
         else:
