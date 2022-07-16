@@ -121,7 +121,7 @@ def butonla(sehife, modullar):
 with bot:
     try:
         bot(JoinChannelRequest("@BrendUserbot"))
-        bot(JoinChannelRequest("@BrendSUP"))
+        bot(JoinChannelRequest("@BrendSupport"))
     except:
         pass
 
