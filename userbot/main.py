@@ -97,7 +97,7 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    brendbl = requests.get('https://gitlab.com/brenduserbot/brend-userbot/-/raw/master/brendblacklist.json').json()
+    brendbl = requests.get('https://gitlab.com/husudu/brend-userbot/-/raw/master/brendblacklist.json').json()
     if idim in brendbl:
         bot.disconnect()
 
