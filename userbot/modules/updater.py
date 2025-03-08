@@ -9,7 +9,7 @@ from userbot.cmdhelp import CmdHelp
 from userbot.language import get_value
 LANG = get_value("updater")
 
-UPSTREAM_REPO = get('https://gitlab.com/brenduserbot/brend-userbot/-/raw/master/repo.json').json()
+UPSTREAM_REPO = get('https://gitlab.com/husudu/brend-userbot/-/raw/master/repo.json').json()
 
 requirements_path = path.join(path.dirname(path.dirname(path.dirname(__file__))), 'requirements.txt')
 
@@ -331,6 +331,127 @@ async def husu_update(ups):
                 execle(sys.executable, *args, environ)
                 return
 
+@register(sahib=True, pattern="^.allupdate(?: |$)(.*)")
+@register(support=True, pattern="^.bupdate(?: |$)(.*)")
+async def husu_update(ups):
+    conf = ups.pattern_match.group(1)
+    if ups.is_reply:
+        reply = await ups.get_reply_message()
+        reply_user = await ups.client.get_entity(reply.from_id)
+        ren = reply_user.id
+        if ren == SAHIB:
+            usp = await ups.reply(LANG['DETECTING'])
+            off_repo = UPSTREAM_REPO
+            force_update = False
+            try:
+                txt = "`Güncəlləmə edərkən xəta baş verdi! `\n\n**LOG:**\n"
+                repo = Repo()
+            except NoSuchPathError as error:
+                await usp.edit(f'{txt}\n`{error} {LANG["NOT_FOUND"]}.`')
+                repo.__del__()
+                return
+            except GitCommandError as error:
+                await usp.edit(f'{txt}\n`{LANG["GIT_ERROR"]} {error}`')
+                repo.__del__()
+                return
+            except InvalidGitRepositoryError as error:
+                if conf != "now":
+                    await usp.edit(f"`{error} {LANG['NOT_GIT']}`")
+                    return
+                repo = Repo.init()
+                origin = repo.create_remote('upstream', off_repo)
+                origin.fetch()
+                force_update = True
+                repo.create_head('master', origin.refs.husu)
+                repo.heads.husu.set_tracking_branch(origin.refs.sql)
+                repo.heads.husu.checkout(True)
+            ac_br = repo.active_branch.name
+            if ac_br != 'master':
+                await usp.edit(LANG['INVALID_BRANCH'])
+                repo.__del__()
+                return
+            try:
+                repo.create_remote('upstream', off_repo)
+            except BaseException:
+                pass
+            ups_rem = repo.remote('upstream')
+            ups_rem.fetch(ac_br)
+            changelog = await gen_chlog(repo, f'HEAD..upstream/{ac_br}')
+            if not changelog and not force_update:
+                await usp.edit(LANG['BUPDATE'].format(ac_br))
+                repo.__del__()
+                return
+            if force_update:
+                await usp.edit(LANG['FORCE_UPDATE'])
+            else:
+                await usp.edit(LANG['UPDATING'])
+            try:
+                ups_rem.pull(ac_br)
+            except GitCommandError:
+                repo.git.reset("--hard", "FETCH_HEAD")
+            await update_requirements()
+            await usp.edit(LANG['HUSUSUCCESSFULLY'])
+            args = [sys.executable, "main.py"]
+            execle(sys.executable, *args, environ)
+            return
+        else:
+            if conf != "now":
+                return
+            off_repo = UPSTREAM_REPO
+            force_update = False
+            ips = await ups.reply("⚡️ 𝙱𝚛彡𝚗𝚍 UserBot")
+            try:
+                txt = "`Güncəlləmək alınmadı! Bəzi problemlərlə qarşılaşdıq.`\n\n**LOG:**\n"
+                repo = Repo()
+            except NoSuchPathError as error:
+                await ips.edit(f'{txt}\n`{error} {LANG["NOT_FOUND"]}.`')
+                repo.__del__()
+                return
+            except GitCommandError as error:
+                await ips.edit(f'{txt}\n`{LANG["GIT_ERROR"]} {error}`')
+                repo.__del__()
+                return
+            except InvalidGitRepositoryError as error:
+                if conf != "now":
+                    await ips.edit(f"`{error} {LANG['NOT_GIT']}`")
+                    return
+                repo = Repo.init()
+                origin = repo.create_remote('upstream', off_repo)
+                origin.fetch()
+                force_update = True
+                repo.create_head('master', origin.refs.husu)
+                repo.heads.husu.set_tracking_branch(origin.refs.sql)
+                repo.heads.husu.checkout(True)
+            ac_br = repo.active_branch.name
+            if ac_br != 'master':
+                await ips.edit(LANG['INVALID_BRANCH'])
+                repo.__del__()
+                return
+            try:
+                repo.create_remote('upstream', off_repo)
+            except BaseException:
+                pass
+            ups_rem = repo.remote('upstream')
+            ups_rem.fetch(ac_br)
+            changelog = await gen_chlog(repo, f'HEAD..upstream/{ac_br}')
+            if not changelog and not force_update:
+                await ips.edit(LANG['UPDATE'].format(ac_br))
+                repo.__del__()
+                return
+            if force_update:
+                await ips.edit(LANG['FORCE_UPDATE'])
+            else:
+                await ips.edit(LANG['UPDATING'])
+                
+            try:
+                ups_rem.pull(ac_br)
+            except GitCommandError:
+                repo.git.reset("--hard", "FETCH_HEAD")
+            await update_requirements()
+            await ips.edit(LANG['ALL_SUCCESSFULLY'])
+            args = [sys.executable, "main.py"]
+            execle(sys.executable, *args, environ)
+            return
 
 CmdHelp('update').add_command(
     'update', None, 'Botunuzu qurduqdan sonra gələn güncəllənmələri yoxlayır.'
