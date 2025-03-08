@@ -1,7 +1,7 @@
 from random import randint
 from asyncio import sleep
-from telethon.events import StopPropagation
-from userbot import CMD_HELP, BOTLOG, BOTLOG_CHATID, PM_AUTO_BAN
+from telethon.events import StopPropagation, NewMessage as n
+from userbot import CMD_HELP, BOTLOG, BOTLOG_CHATID, PM_AUTO_BAN, bot as b
 from userbot.events import register
 from userbot.main import PLUGIN_MESAJLAR
 from time import time
@@ -262,8 +262,10 @@ async def set_afk(afk_e):
     ISAFK = True
     raise StopPropagation
 
-
-@register(outgoing=True)
+#indiyədək bir cındır oğlu cındır peysər 
+#düzəltməmişdi bu xətanı. İndi kimsə 
+#kopyalasa varyoxuna girib çıxacam.
+@b.on(n(outgoing=True))
 async def type_afk_is_not_true(notafk):
     global ISAFK
     global COUNT_MSG
@@ -277,8 +279,7 @@ async def type_afk_is_not_true(notafk):
             await notafk.client.send_message(BOTLOG_CHATID, f"Siz AFK olarkən {len(USERS)} nəfər sizə {COUNT_MSG} mesaj göndərdi.",)
             for i in USERS:
                 name = await notafk.client.get_entity(i)
-                name0 = "name.first_name"
-                await notafk.client.send_message(BOTLOG_CHATID,"[{name0}](tg://user?id=i) sizə {USERS[i]} mesaj göndərdi")
+                await notafk.client.send_message(BOTLOG_CHATID, f"[{name.first_name}](tg://user?id=i) sizə {USERS[i]} mesaj göndərdi")
         COUNT_MSG = 0
         USERS = {}
         AFKREASON = None
