@@ -412,7 +412,7 @@ async def husu_update(ups):
                 repo.__del__()
                 return
             except InvalidGitRepositoryError as error:
-                if conf != "now":
+                if conf != "all":
                     await ips.edit(f"`{error} {LANG['NOT_GIT']}`")
                     return
                 repo = Repo.init()
