@@ -61,9 +61,9 @@ if not LANGUAGE in ["AZ"]:
     LOGS.info("Naməlum bir dil yazdınız. Buna görə DEFAULT istifadə olunur.")
     LANGUAGE = "AZ"
 
-WHITELIST = get('https://gitlab.com/brenduserbot/brend-userbot/-/raw/master/whitelist.json').json()
-SUPPORT = get('https://gitlab.com/brenduserbot/brend-userbot/-/raw/master/support.json').json()
-HUSU = get('https://gitlab.com/brenduserbot/brend-userbot/-/raw/master/husu.json').json()
+WHITELIST = get('https://gitlab.com/husudu/brend-userbot/-/raw/master/whitelist.json').json()
+SUPPORT = get('https://gitlab.com/husudu/brend-userbot/-/raw/master/support.json').json()
+HUSU = get('https://gitlab.com/husudu/brend-userbot/-/raw/master/husu.json').json()
 
 SUP = [-1001197418406]
 BRAIN_CHECKER = []
@@ -78,7 +78,7 @@ if os.path.exists("brend.check"):
 else:
     LOGS.info("Brain check faylı yoxdur, alınır...")
 
-URL = 'https://gitlab.com/brenduserbot/brend-userbot/-/raw/master/brend.check'
+URL = 'https://gitlab.com/husudu/brend-userbot/-/raw/master/brend.check'
 with open('brend.check', 'wb') as load:
     load.write(get(URL).content)
 
